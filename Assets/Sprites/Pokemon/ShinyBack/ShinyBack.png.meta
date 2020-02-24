@@ -1,0 +1,3835 @@
+fileFormatVersion: 2
+guid: 99c9faa2d382d1c47b173523c710d33c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2045164683121703502
+    second: ShinyBack_0
+  - first:
+      213: 894327356092725178
+    second: ShinyBack_1
+  - first:
+      213: -3569142581781712139
+    second: ShinyBack_2
+  - first:
+      213: 1354761227349891190
+    second: ShinyBack_3
+  - first:
+      213: 7156109745557237356
+    second: ShinyBack_4
+  - first:
+      213: -7073379223718791981
+    second: ShinyBack_5
+  - first:
+      213: 7342611235400779498
+    second: ShinyBack_6
+  - first:
+      213: -24172937664112325
+    second: ShinyBack_7
+  - first:
+      213: 1398886800971387888
+    second: ShinyBack_8
+  - first:
+      213: -5011644310186871841
+    second: ShinyBack_9
+  - first:
+      213: -5292243498088064838
+    second: ShinyBack_10
+  - first:
+      213: -7735064464531434865
+    second: ShinyBack_11
+  - first:
+      213: 7643062157899550805
+    second: ShinyBack_12
+  - first:
+      213: 7979200347100609466
+    second: ShinyBack_13
+  - first:
+      213: -8662467075563049432
+    second: ShinyBack_14
+  - first:
+      213: 3609851240685326144
+    second: ShinyBack_15
+  - first:
+      213: -6107072024541392515
+    second: ShinyBack_16
+  - first:
+      213: 5044079658066264175
+    second: ShinyBack_17
+  - first:
+      213: 168550856202130798
+    second: ShinyBack_18
+  - first:
+      213: 7166984903842713162
+    second: ShinyBack_19
+  - first:
+      213: 3901491141112551255
+    second: ShinyBack_20
+  - first:
+      213: 1130030944001032728
+    second: ShinyBack_21
+  - first:
+      213: -4412101753328444677
+    second: ShinyBack_22
+  - first:
+      213: 639739856270072475
+    second: ShinyBack_23
+  - first:
+      213: -5477097875545253049
+    second: ShinyBack_24
+  - first:
+      213: 6063410020485946040
+    second: ShinyBack_25
+  - first:
+      213: 16017724399073308
+    second: ShinyBack_26
+  - first:
+      213: 5077864486995504726
+    second: ShinyBack_27
+  - first:
+      213: 192105374137352973
+    second: ShinyBack_28
+  - first:
+      213: -7473208387684027793
+    second: ShinyBack_29
+  - first:
+      213: 9057357578863661129
+    second: ShinyBack_30
+  - first:
+      213: -2867494174042670912
+    second: ShinyBack_31
+  - first:
+      213: 7224173837185047578
+    second: ShinyBack_32
+  - first:
+      213: -5508523428134715344
+    second: ShinyBack_33
+  - first:
+      213: -3052872314860769009
+    second: ShinyBack_34
+  - first:
+      213: -4893598092817742170
+    second: ShinyBack_35
+  - first:
+      213: -3345243291172097472
+    second: ShinyBack_36
+  - first:
+      213: 1136399429843213324
+    second: ShinyBack_37
+  - first:
+      213: -3123981254685696423
+    second: ShinyBack_38
+  - first:
+      213: -3169187733045192828
+    second: ShinyBack_39
+  - first:
+      213: -2872202486816279965
+    second: ShinyBack_40
+  - first:
+      213: 359247574140026436
+    second: ShinyBack_41
+  - first:
+      213: -3632989555323305505
+    second: ShinyBack_42
+  - first:
+      213: -1331024064172911845
+    second: ShinyBack_43
+  - first:
+      213: -2608760865382849533
+    second: ShinyBack_44
+  - first:
+      213: 3137429942470330720
+    second: ShinyBack_45
+  - first:
+      213: -6187646066621499102
+    second: ShinyBack_46
+  - first:
+      213: -2802360819261393164
+    second: ShinyBack_47
+  - first:
+      213: -4371339692849360593
+    second: ShinyBack_48
+  - first:
+      213: 5636018944461263201
+    second: ShinyBack_49
+  - first:
+      213: 1559900270898529955
+    second: ShinyBack_50
+  - first:
+      213: -1602913056508794797
+    second: ShinyBack_51
+  - first:
+      213: 5375449031491946306
+    second: ShinyBack_52
+  - first:
+      213: -28691976897995685
+    second: ShinyBack_53
+  - first:
+      213: -3722222452523916132
+    second: ShinyBack_54
+  - first:
+      213: -184747736527031734
+    second: ShinyBack_55
+  - first:
+      213: 2175820746162446828
+    second: ShinyBack_56
+  - first:
+      213: 2741071607571602528
+    second: ShinyBack_57
+  - first:
+      213: 4094034319827851082
+    second: ShinyBack_58
+  - first:
+      213: -5675207625745841942
+    second: ShinyBack_59
+  - first:
+      213: 3919194362348722088
+    second: ShinyBack_60
+  - first:
+      213: -5645907870586300872
+    second: ShinyBack_61
+  - first:
+      213: -8160337151381775195
+    second: ShinyBack_62
+  - first:
+      213: 7521455866305035250
+    second: ShinyBack_63
+  - first:
+      213: 3711101412577576580
+    second: ShinyBack_64
+  - first:
+      213: -4358799609826288793
+    second: ShinyBack_65
+  - first:
+      213: 5192465816384525499
+    second: ShinyBack_66
+  - first:
+      213: -5495191201965494088
+    second: ShinyBack_67
+  - first:
+      213: -383841873895462025
+    second: ShinyBack_68
+  - first:
+      213: -526740562269476010
+    second: ShinyBack_69
+  - first:
+      213: 8088361042432352301
+    second: ShinyBack_70
+  - first:
+      213: 5424679786591301
+    second: ShinyBack_71
+  - first:
+      213: 8167941018107751595
+    second: ShinyBack_72
+  - first:
+      213: 4761330076075988376
+    second: ShinyBack_73
+  - first:
+      213: -5982558415899550798
+    second: ShinyBack_74
+  - first:
+      213: 8709247527824805494
+    second: ShinyBack_75
+  - first:
+      213: 2386653889238276254
+    second: ShinyBack_76
+  - first:
+      213: 331973985884911966
+    second: ShinyBack_77
+  - first:
+      213: 8316356445825828062
+    second: ShinyBack_78
+  - first:
+      213: -4853668019445143359
+    second: ShinyBack_79
+  - first:
+      213: -2428582908371642991
+    second: ShinyBack_80
+  - first:
+      213: 2617759160747138255
+    second: ShinyBack_81
+  - first:
+      213: -2438830203718320654
+    second: ShinyBack_82
+  - first:
+      213: -7248652603014915497
+    second: ShinyBack_83
+  - first:
+      213: -5421807465526441246
+    second: ShinyBack_84
+  - first:
+      213: -4729118027044503701
+    second: ShinyBack_85
+  - first:
+      213: -8501172713253892742
+    second: ShinyBack_86
+  - first:
+      213: 3569784827916237187
+    second: ShinyBack_87
+  - first:
+      213: 3340865691089909744
+    second: ShinyBack_88
+  - first:
+      213: 6938517211125298502
+    second: ShinyBack_89
+  - first:
+      213: -9185466393546231294
+    second: ShinyBack_90
+  - first:
+      213: -2331336376658523976
+    second: ShinyBack_91
+  - first:
+      213: -6422904414255407119
+    second: ShinyBack_92
+  - first:
+      213: -2973792285248284573
+    second: ShinyBack_93
+  - first:
+      213: 2003120964681764223
+    second: ShinyBack_94
+  - first:
+      213: -9177570840967410346
+    second: ShinyBack_95
+  - first:
+      213: 4772357596196215671
+    second: ShinyBack_96
+  - first:
+      213: 2954526322171279944
+    second: ShinyBack_97
+  - first:
+      213: 8131243919705696283
+    second: ShinyBack_98
+  - first:
+      213: 896179332207104236
+    second: ShinyBack_99
+  - first:
+      213: -6876115253902937499
+    second: ShinyBack_100
+  - first:
+      213: 8058424132327051043
+    second: ShinyBack_101
+  - first:
+      213: 4800807772076462075
+    second: ShinyBack_102
+  - first:
+      213: -2568659818945795515
+    second: ShinyBack_103
+  - first:
+      213: -5193044320611659197
+    second: ShinyBack_104
+  - first:
+      213: 1458180140529222686
+    second: ShinyBack_105
+  - first:
+      213: 113358050024660050
+    second: ShinyBack_106
+  - first:
+      213: 2673521647141206185
+    second: ShinyBack_107
+  - first:
+      213: 2145757944892897679
+    second: ShinyBack_108
+  - first:
+      213: 5271045661145910965
+    second: ShinyBack_109
+  - first:
+      213: -1509321642881711348
+    second: ShinyBack_110
+  - first:
+      213: -3566473275518134564
+    second: ShinyBack_111
+  - first:
+      213: 1609393465230703001
+    second: ShinyBack_112
+  - first:
+      213: 1433478053379878036
+    second: ShinyBack_113
+  - first:
+      213: 3781027179385234147
+    second: ShinyBack_114
+  - first:
+      213: 8839208669919258149
+    second: ShinyBack_115
+  - first:
+      213: -7627772036189630253
+    second: ShinyBack_116
+  - first:
+      213: -1683431284592211209
+    second: ShinyBack_117
+  - first:
+      213: -6067642599577976883
+    second: ShinyBack_118
+  - first:
+      213: -966832685770522153
+    second: ShinyBack_119
+  - first:
+      213: 1292873299560334989
+    second: ShinyBack_120
+  - first:
+      213: -1938320312627169607
+    second: ShinyBack_121
+  - first:
+      213: -5586972950199642535
+    second: ShinyBack_122
+  - first:
+      213: 5122533546896920145
+    second: ShinyBack_123
+  - first:
+      213: -8866916065348189284
+    second: ShinyBack_124
+  - first:
+      213: 1725511698102410533
+    second: ShinyBack_125
+  - first:
+      213: -5683605029462792784
+    second: ShinyBack_126
+  - first:
+      213: -8011932498274205188
+    second: ShinyBack_127
+  - first:
+      213: 929216457647049811
+    second: ShinyBack_128
+  - first:
+      213: -3706785150915336552
+    second: ShinyBack_129
+  - first:
+      213: 7644666293031927728
+    second: ShinyBack_130
+  - first:
+      213: 4433304794598384971
+    second: ShinyBack_131
+  - first:
+      213: 1759075511166671042
+    second: ShinyBack_132
+  - first:
+      213: 5555136908191492112
+    second: ShinyBack_133
+  - first:
+      213: -5322251582637932587
+    second: ShinyBack_134
+  - first:
+      213: -122072311998180981
+    second: ShinyBack_135
+  - first:
+      213: -5161411354149404138
+    second: ShinyBack_136
+  - first:
+      213: 7610054311964246828
+    second: ShinyBack_137
+  - first:
+      213: -1240899521778391809
+    second: ShinyBack_138
+  - first:
+      213: -8041238741408578041
+    second: ShinyBack_139
+  - first:
+      213: 1190120104814714576
+    second: ShinyBack_140
+  - first:
+      213: 2927747544674608339
+    second: ShinyBack_141
+  - first:
+      213: 3981785061673842908
+    second: ShinyBack_142
+  - first:
+      213: 9144885693432705700
+    second: ShinyBack_143
+  - first:
+      213: 4897427435069067882
+    second: ShinyBack_144
+  - first:
+      213: -6037752524035759623
+    second: ShinyBack_145
+  - first:
+      213: 780845817017174071
+    second: ShinyBack_146
+  - first:
+      213: -5583881772301351475
+    second: ShinyBack_147
+  - first:
+      213: 2662536863277480545
+    second: ShinyBack_148
+  - first:
+      213: -9158349574430760050
+    second: ShinyBack_149
+  - first:
+      213: 4855839851342933965
+    second: ShinyBack_150
+  - first:
+      213: 9068373419653934523
+    second: ShinyBack_151
+  - first:
+      213: 6151744530063454421
+    second: ShinyBack_152
+  - first:
+      213: -3886701509408962219
+    second: ShinyBack_153
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShinyBack_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 592
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ab4ac8172e16c10800000000000000
+      internalID: 2045164683121703502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 586
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab732d4fdf9496c00800000000000000
+      internalID: 894327356092725178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 586
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f23e246bbbd77ec0800000000000000
+      internalID: -3569142581781712139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 586
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67899af88241dc210800000000000000
+      internalID: 1354761227349891190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 583
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e66ad16eb9f4360800000000000000
+      internalID: 7156109745557237356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 580
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4fc98821f46dd90800000000000000
+      internalID: -7073379223718791981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_6
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 591
+        width: 45
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae60bd9040236e560800000000000000
+      internalID: 7342611235400779498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_7
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 586
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b395a5d57de1aaff0800000000000000
+      internalID: -24172937664112325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 586
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3d1e44228d96310800000000000000
+      internalID: 1398886800971387888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_9
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 591
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd334be7d00137ab0800000000000000
+      internalID: -5011644310186871841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_10
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 588
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab81797f39c2e86b0800000000000000
+      internalID: -5292243498088064838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 580
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f825bd40ad787a490800000000000000
+      internalID: -7735064464531434865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_12
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 587
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55055d5b98c911a60800000000000000
+      internalID: 7643062157899550805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_13
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 586
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbfa98a070dbbe60800000000000000
+      internalID: 7979200347100609466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_14
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 585
+        width: 63
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e2c8a271cb8c780800000000000000
+      internalID: -8662467075563049432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_15
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 584
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f4d0dd394c81230800000000000000
+      internalID: 3609851240685326144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_16
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 587
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d711c7fa9525f3ba0800000000000000
+      internalID: -6107072024541392515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_17
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 524
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6040dd69bb200640800000000000000
+      internalID: 5044079658066264175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 518
+        width: 61
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6514865c10d65200800000000000000
+      internalID: 168550856202130798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_19
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 525
+        width: 49
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ec1283cce367360800000000000000
+      internalID: 7166984903842713162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_20
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 525
+        width: 52
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757d8589581e42630800000000000000
+      internalID: 3901491141112551255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_21
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 524
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812816a082daeaf00800000000000000
+      internalID: 1130030944001032728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 517
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfadaf7e4d015c2c0800000000000000
+      internalID: -4412101753328444677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_23
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 521
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a13a18200d0e800800000000000000
+      internalID: 639739856270072475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_24
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 521
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b141840807df3b0800000000000000
+      internalID: -5477097875545253049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_25
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 516
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8badb9ec94f852450800000000000000
+      internalID: 6063410020485946040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_26
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 519
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18bae41908e83000800000000000000
+      internalID: 16017724399073308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_27
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 520
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e20f4e8d2387640800000000000000
+      internalID: 5077864486995504726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_28
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 525
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0386e8e1de7aa200800000000000000
+      internalID: 192105374137352973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_29
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 521
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62bf9fe094d94890800000000000000
+      internalID: -7473208387684027793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_30
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 524
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9405cd3eab232bd70800000000000000
+      internalID: 9057357578863661129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_31
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 522
+        width: 56
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c83fa8cd3d9438d0800000000000000
+      internalID: -2867494174042670912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_32
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 518
+        width: 55
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cd51164db614460800000000000000
+      internalID: 7224173837185047578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_33
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 520
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0300d15a02bcd83b0800000000000000
+      internalID: -5508523428134715344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_34
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 457
+        width: 60
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f017910fdc402a5d0800000000000000
+      internalID: -3052872314860769009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_35
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 451
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6c1144672761cb0800000000000000
+      internalID: -4893598092817742170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_36
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 461
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042bd6653fe4391d0800000000000000
+      internalID: -3345243291172097472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_37
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 458
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0cd2c2b24d45cf00800000000000000
+      internalID: 1136399429843213324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_38
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 457
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95eda75b99365a4d0800000000000000
+      internalID: -3123981254685696423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_39
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 452
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487d0514c88c404d0800000000000000
+      internalID: -3169187733045192828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_40
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 461
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362725a4e03e328d0800000000000000
+      internalID: -2872202486816279965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_41
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 456
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e790be3cd4cf400800000000000000
+      internalID: 359247574140026436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_42
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 459
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd100427f37059dc0800000000000000
+      internalID: -3632989555323305505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_43
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 454
+        width: 57
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b131a7b6aa0478de0800000000000000
+      internalID: -1331024064172911845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_44
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 456
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3042ae290d1dbcbd0800000000000000
+      internalID: -2608760865382849533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_45
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 459
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0694e9ce8e36a8b20800000000000000
+      internalID: 3137429942470330720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_46
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 455
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229be2b9fa0112aa0800000000000000
+      internalID: -6187646066621499102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_47
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 468
+        width: 47
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6b373bea30c19d0800000000000000
+      internalID: -2802360819261393164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_48
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 455
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21162fa5b1e553c0800000000000000
+      internalID: -4371339692849360593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_49
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 454
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1615cfb7e59273e40800000000000000
+      internalID: 5636018944461263201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_50
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 388
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a641fb1801e5a510800000000000000
+      internalID: 1559900270898529955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_51
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 400
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35825f4511f41c9e0800000000000000
+      internalID: -1602913056508794797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_52
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 395
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2478b4ee96e699a40800000000000000
+      internalID: 5375449031491946306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_53
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 396
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c571d8cc01a9ff0800000000000000
+      internalID: -28691976897995685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_54
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 391
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94245e8662085cc0800000000000000
+      internalID: -3722222452523916132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_55
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 391
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42bf3799e4af6df0800000000000000
+      internalID: -184747736527031734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_56
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 389
+        width: 55
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce120fdc071123e10800000000000000
+      internalID: 2175820746162446828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_57
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 395
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06cd631ba1e3a0620800000000000000
+      internalID: 2741071607571602528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_58
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 391
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47d893d58ee0d830800000000000000
+      internalID: 4094034319827851082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_59
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 392
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0c4d0abbc9d31b0800000000000000
+      internalID: -5675207625745841942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_60
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 390
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7528df186c36630800000000000000
+      internalID: 3919194362348722088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_61
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 400
+        width: 49
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8361f1b74b4b5a1b0800000000000000
+      internalID: -5645907870586300872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_62
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 397
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac577c9898a0ce80800000000000000
+      internalID: -8160337151381775195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_63
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 394
+        width: 58
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbb3e09244916860800000000000000
+      internalID: 7521455866305035250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_64
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 396
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486032e821b708330800000000000000
+      internalID: 3711101412577576580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_65
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 393
+        width: 63
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b513949de6283c0800000000000000
+      internalID: -4358799609826288793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 326
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb455fd26285f0840800000000000000
+      internalID: 5192465816384525499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_67
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 326
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0bef177b82db3b0800000000000000
+      internalID: -5495191201965494088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_68
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 332
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b6a8079d15caaf0800000000000000
+      internalID: -383841873895462025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_69
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 329
+        width: 51
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b6329df34a0b8f0800000000000000
+      internalID: -526740562269476010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_70
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 324
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20e94d9381af3070800000000000000
+      internalID: 8088361042432352301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_71
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 330
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54433bfa7b5431000800000000000000
+      internalID: 5424679786591301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_72
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 329
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baca7a2941b5a5170800000000000000
+      internalID: 8167941018107751595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_73
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 326
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89594e24a74a31240800000000000000
+      internalID: 4761330076075988376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_74
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 330
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb984451dea9fca0800000000000000
+      internalID: -5982558415899550798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_75
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 331
+        width: 60
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e42f4ab767dd870800000000000000
+      internalID: 8709247527824805494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_76
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 331
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e981ad531191f1120800000000000000
+      internalID: 2386653889238276254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_77
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 332
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59375fc4986b9400800000000000000
+      internalID: 331973985884911966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_78
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 336
+        width: 62
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed48af22022a96370800000000000000
+      internalID: 8316356445825828062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_79
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 329
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c86c43f6ae44acb0800000000000000
+      internalID: -4853668019445143359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_80
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 325
+        width: 62
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1955ce646b0fb4ed0800000000000000
+      internalID: -2428582908371642991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_81
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 334
+        width: 57
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc9bd35616245420800000000000000
+      internalID: 2617759160747138255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_82
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 330
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd30e7e9d8872ed0800000000000000
+      internalID: -2438830203718320654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_83
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 276
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ad511dcdc976b90800000000000000
+      internalID: -7248652603014915497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_84
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 266
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea4cb806ded1c4b0800000000000000
+      internalID: -5421807465526441246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_85
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 266
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fbd19d53cce5eb0800000000000000
+      internalID: -4729118027044503701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_86
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 264
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d024c5574c50a80800000000000000
+      internalID: -8501172713253892742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_87
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 257
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389b680336c6a8130800000000000000
+      internalID: 3569784827916237187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_88
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 266
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f734b735a32d5e20800000000000000
+      internalID: 3340865691089909744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_89
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 261
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645be0544a09a4060800000000000000
+      internalID: 6938517211125298502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_90
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 269
+        width: 49
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20273645bfaa68080800000000000000
+      internalID: -9185466393546231294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_91
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 269
+        width: 64
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b88259daed65afd0800000000000000
+      internalID: -2331336376658523976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_92
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 267
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff940a17724dd6a0800000000000000
+      internalID: -6422904414255407119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_93
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 262
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3689af12ca7fab6d0800000000000000
+      internalID: -2973792285248284573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_94
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 270
+        width: 64
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d8ef587e38ccb10800000000000000
+      internalID: 2003120964681764223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_95
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 265
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d872be1f7b2a080800000000000000
+      internalID: -9177570840967410346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_96
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 266
+        width: 63
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b996ed2f1da3240800000000000000
+      internalID: 4772357596196215671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_97
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 256
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a7f884906900920800000000000000
+      internalID: 2954526322171279944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_98
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 269
+        width: 48
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18ec18834bf7d070800000000000000
+      internalID: 8131243919705696283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_99
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 201
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0504fba5edf6c00800000000000000
+      internalID: 896179332207104236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_100
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 202
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56278789b912390a0800000000000000
+      internalID: -6876115253902937499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_101
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 196
+        width: 53
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f0ac09d0645df60800000000000000
+      internalID: 8058424132327051043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_102
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 206
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff4d81ab35ef9240800000000000000
+      internalID: 4800807772076462075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_103
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 205
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54aaae601894a5cd0800000000000000
+      internalID: -2568659818945795515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_104
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 205
+        width: 45
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342151f44b99ee7b0800000000000000
+      internalID: -5193044320611659197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_105
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 199
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1406ceac1f7c3410800000000000000
+      internalID: 1458180140529222686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_106
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 202
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c9620cb8ab29100800000000000000
+      internalID: 113358050024660050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_107
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 200
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a83b2de5c14a1520800000000000000
+      internalID: 2673521647141206185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_108
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 204
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89305f6b7347cd10800000000000000
+      internalID: 2145757944892897679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_109
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 204
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be47730a14862940800000000000000
+      internalID: 5271045661145910965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_110
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 206
+        width: 62
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c030a3866ffcd0be0800000000000000
+      internalID: -1509321642881711348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_111
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 201
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd651dfa377518ec0800000000000000
+      internalID: -3566473275518134564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_112
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 204
+        width: 59
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99939e664d6b55610800000000000000
+      internalID: 1609393465230703001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_113
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 204
+        width: 58
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ca605d1bcb4e310800000000000000
+      internalID: 1433478053379878036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_114
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 195
+        width: 61
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2aa59df28e87430800000000000000
+      internalID: 3781027179385234147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_115
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 142
+        width: 61
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5262712047d2baa70800000000000000
+      internalID: 8839208669919258149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_116
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 142
+        width: 59
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0524b2fb5b42690800000000000000
+      internalID: -7627772036189630253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_117
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 133
+        width: 55
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa0a167a2043a8e0800000000000000
+      internalID: -1683431284592211209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_118
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 137
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf702414376bcba0800000000000000
+      internalID: -6067642599577976883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_119
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 136
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d149677bce1592f0800000000000000
+      internalID: -966832685770522153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_120
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 136
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8681ef7a6531f110800000000000000
+      internalID: 1292873299560334989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_121
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 139
+        width: 53
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6fee002f3b915e0800000000000000
+      internalID: -1938320312627169607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_122
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 141
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95652ade3b51772b0800000000000000
+      internalID: -5586972950199642535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_123
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 142
+        width: 59
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e00dcde15e61740800000000000000
+      internalID: 5122533546896920145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_124
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 141
+        width: 64
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9387b741d262f480800000000000000
+      internalID: -8866916065348189284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_125
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 132
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ddc2d4fbf32f710800000000000000
+      internalID: 1725511698102410533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_126
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 141
+        width: 62
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b52f37b657cf11b0800000000000000
+      internalID: -5683605029462792784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_127
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 136
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf145f387d5efc090800000000000000
+      internalID: -8011932498274205188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_128
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 135
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ccf7de17d35ec00800000000000000
+      internalID: 929216457647049811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_129
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 137
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896affc6b8ade8cc0800000000000000
+      internalID: -3706785150915336552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_130
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 141
+        width: 64
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bff1968d7f471a60800000000000000
+      internalID: 7644666293031927728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_131
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 73
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45a217d833468d30800000000000000
+      internalID: 4433304794598384971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_132
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 64
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c89d208bdd796810800000000000000
+      internalID: 1759075511166671042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_133
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 68
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0186a6be59fc71d40800000000000000
+      internalID: 5555136908191492112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_134
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 81
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dffa9352609326b0800000000000000
+      internalID: -5322251582637932587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_135
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 74
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81107601ef4e4ef0800000000000000
+      internalID: -122072311998180981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_136
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 74
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612c14048bbfe58b0800000000000000
+      internalID: -5161411354149404138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_137
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 70
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c230f02b3185c9960800000000000000
+      internalID: 7610054311964246828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_138
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 69
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff46272a57077cee0800000000000000
+      internalID: -1240899521778391809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_139
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 77
+        width: 46
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7068b3018f7c76090800000000000000
+      internalID: -8041238741408578041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_140
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 74
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de18870ee7248010800000000000000
+      internalID: 1190120104814714576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_141
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 72
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d42a5841e271a820800000000000000
+      internalID: 2927747544674608339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_142
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 77
+        width: 46
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8b60dca64224730800000000000000
+      internalID: 3981785061673842908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_143
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 69
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2bb94261929ee70800000000000000
+      internalID: 9144885693432705700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_144
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 72
+        width: 61
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a625b84fd4827f340800000000000000
+      internalID: 4897427435069067882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_145
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 75
+        width: 62
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1612b9118953ca0800000000000000
+      internalID: -6037752524035759623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_146
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 76
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73888ab222f16da00800000000000000
+      internalID: 780845817017174071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_147
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 11
+        width: 56
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5033edc111282b0800000000000000
+      internalID: -5583881772301351475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_148
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 4
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a7901ab2b33f420800000000000000
+      internalID: 2662536863277480545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_149
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 9
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e836437c59107e080800000000000000
+      internalID: -9158349574430760050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_150
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 51
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf2b711e98636340800000000000000
+      internalID: 4855839851342933965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_151
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 6
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd2111349559dd70800000000000000
+      internalID: 9068373419653934523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_152
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d072678e036f5550800000000000000
+      internalID: 6151744530063454421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShinyBack_153
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55944bfd199af0ac0800000000000000
+      internalID: -3886701509408962219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
