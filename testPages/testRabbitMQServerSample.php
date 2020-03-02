@@ -3,10 +3,42 @@
 require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
+require_once('account.php'); //db credentials
+
+//db authentication
+function connect(){
+	$db = msqli_connect($server, $user, $pass);
+	if(!db){
+		die('Connection failed: ' . mysqli_connect_error());
+	}
+	return $db;
+}
 
 function login($user,$pass){
-	//TODO validate user credentials
-	return true;
+	//database connection
+	$db = connect();
+	//validate credentials
+	$sql = "select * from accounts where username='$user' and password='$pass'";
+	$result = mysqli_query($db, $sql) or die(mysqli_error());
+	$rows = mysqli_num_rows($result);
+	$login = false;
+	$userID = "";
+	$msg = "";
+	if($rows > 0){
+		while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+			$userID = $row["userId"];
+			$login = true;	
+		}
+	} 
+	else{
+		$msg = "Please use valid credentials.";
+	}
+	//account details
+	return array(
+		'login' => $login,
+		'userID' => $userID,
+		'msg' => $msg
+	);
 }
 
 function request_processor($req){
