@@ -2,3 +2,4 @@
 config.*
 testRabbitMQ.ini
 host.ini
+/testPages/account.php
