@@ -10,6 +10,13 @@ function login($user,$pass){
 }
 
 function request_processor($req){
+	
+	$returnCode = 0;
+	$response = [];
+	$message = "";
+	$payload = "empty";
+	
+	
 	echo "Received Request".PHP_EOL;
 	echo "<pre>" . var_dump($req) . "</pre>";
 	if(!isset($req['type'])){
@@ -19,6 +26,9 @@ function request_processor($req){
 	$type = $req['type'];
 	switch($type){
 		case "login":
+			$returnCode = 0;
+			$message = "request recieved successfully";
+			$payload = login($request['username'], $request['password']);
 			return login($req['username'], $req['password']);
 		case "validate_session":
 			return validate($req['session_id']);
