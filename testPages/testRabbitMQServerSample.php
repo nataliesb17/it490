@@ -41,12 +41,12 @@ function login($user,$pass){
 	else{
 		$msg = "Please use valid credentials.";
 	}
-	/*//account details
+	//account details
 	return array(
 		'login' => $login,
 		'userID' => $userID,
 		'msg' => $msg
-	);*/
+	);
 }
 
 function request_processor($req){
@@ -70,7 +70,11 @@ function request_processor($req){
 			$message = "request recieved successfully";
 			$payload = login($request['username'], $request['password']);
 			return login($req['username'], $req['password']);
-		case "validate_session":
+    case "redirect":
+      /*$returnCode = 0;
+      $message = "page redirecting ...";
+      $payload = $msg, $url, $delay*/
+    case "validate_session":
 			return validate($req['session_id']);
 		case "echo":
 			return array("return_code"=>'0', "message"=>"Echo: " .$req["message"]);
