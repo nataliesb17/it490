@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', 1); //display errors
 
 require_once('path.inc');
 require_once('get_host_info.inc');
