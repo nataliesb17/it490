@@ -70,8 +70,8 @@ function request_processor($req){
 			$message = "request recieved successfully";
 			$payload = login($request['username'], $request['password']);
 			return login($req['username'], $req['password']);
-    case "redirect":
-      /*$returnCode = 0;
+    /*case "redirect":
+      $returnCode = 0;
       $message = "page redirecting ...";
       $payload = $msg, $url, $delay*/
     case "validate_session":
