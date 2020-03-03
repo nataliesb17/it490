@@ -5,6 +5,13 @@ require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 require_once('account.php'); //db credentials
 
+//redirect to different webpage
+function redirect($msg, $url, $delay){
+	echo "<br>$msg<br>";
+	header("refresh:$delay url = $url");
+	exit();
+}
+
 //db authentication
 function connect(){
 	$db = msqli_connect($server, $user, $pass);
@@ -29,16 +36,17 @@ function login($user,$pass){
 			$userID = $row["userId"];
 			$login = true;	
 		}
+		redirect('Loading user profile...', 'profile.html', 3);
 	} 
 	else{
 		$msg = "Please use valid credentials.";
 	}
-	//account details
+	/*//account details
 	return array(
 		'login' => $login,
 		'userID' => $userID,
 		'msg' => $msg
-	);
+	);*/
 }
 
 function request_processor($req){
