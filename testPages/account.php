@@ -1,3 +1,4 @@
-	$servername = "5BC-DB";
+	$servername = "localhost";
 	$username = "maniroopa";
 	$password = "maniroopa";
+	$dbname = "5BC-DB";
