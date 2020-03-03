@@ -10,9 +10,9 @@ require_once('rabbitMQLib.inc');
 
 //have client send message t
 $client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
-$email = $_POST['email'];
+$username = $_POST['username'];
 $password = $_POST['password'];
-$req = array("type"=>"login", "email"=>$email, "password"=>$password);
+$req = array("type"=>"login", "username"=>$username, "password"=>$password);
 $response = $client->send_request($req);
 if ($response==1){
 	echo 1;
