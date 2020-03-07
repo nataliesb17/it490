@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class PokemonBase : MonoBehaviour
 {
-
-    struct Pokemon {
-
+        /** Identifiers **/
         public int dex_ID;
         public bool isPlayer;
 
@@ -35,14 +33,31 @@ public class PokemonBase : MonoBehaviour
         /** Pokemon cry **/
         public AudioClip cry;
 
-        /** Functions **/
-        public void Attack() { }
-        public void TakeDamage() { }
-        public void DealDamage() { }
-        public void IsDead() { }
-        public void StatsRecorder() { }
-        
+      
+    /*****Defined functions*****/
+
+    /* Handle attacks
+     * @param Use one of the gamobjects in the moves array
+     * */
+    public void Attack(GameObject move)
+    {
 
     }
+
+    /* Handle taking damage from the enemy
+     * @param Enemy - pokemon doing damage
+     * @param self - the pokemon taking damage
+     * */
+    public void TakeDamage(GameObject enemy, GameObject self)
+    {
+
+    }
+
+    public void DealDamage(GameObject enemy, Pokemon self)
+    {
+        
+    }
+
+
 
 }
