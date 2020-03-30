@@ -3,4 +3,4 @@
 
 #sudo apt install -y php php-mbstring php-bcmath composer rsyslog git rabbitmq-server
 
-cd it490
+cd ~
