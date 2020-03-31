@@ -4,7 +4,7 @@ sudo apt install rsyslog
 #configures rsyslog to start at the beginning
 sudo systemctl start rsyslog
 sudo systemctl enable rsyslog
-sudo systemctl status rsyslog
+#sudo systemctl status rsyslog
 
 
 #copies the already set up file for the RabbitMQ server
