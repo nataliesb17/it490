@@ -8,7 +8,7 @@ sudo systemctl enable rsyslog
 
 
 #copies the already set up file for the RabbitMQ server
-cp it490/Rsyslog/rsyslogServer.conf /etc/rsyslog.conf
+sudo cp rsyslogServer.conf /etc/rsyslog.conf
 
 #restarting the the rsyslog daemon
 sudo systemctl restart rsyslog
