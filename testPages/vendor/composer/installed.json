@@ -1,93 +1,17 @@
 [
     {
-        "name": "php-amqplib/php-amqplib",
-        "version": "v2.11.0",
-        "version_normalized": "2.11.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/php-amqplib/php-amqplib.git",
-            "reference": "9ee212baced63442ca1ab029acde38e1144a00b8"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/php-amqplib/php-amqplib/zipball/9ee212baced63442ca1ab029acde38e1144a00b8",
-            "reference": "9ee212baced63442ca1ab029acde38e1144a00b8",
-            "shasum": ""
-        },
-        "require": {
-            "ext-mbstring": "*",
-            "ext-sockets": "*",
-            "php": ">=5.6.3",
-            "phpseclib/phpseclib": "^2.0.0"
-        },
-        "replace": {
-            "videlalvaro/php-amqplib": "self.version"
-        },
-        "require-dev": {
-            "ext-curl": "*",
-            "nategood/httpful": "^0.2.20",
-            "phpunit/phpunit": "^5.7|^6.5|^7.0",
-            "squizlabs/php_codesniffer": "^2.5"
-        },
-        "time": "2019-11-19T15:15:19+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.11-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "PhpAmqpLib\\": "PhpAmqpLib/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "LGPL-2.1-or-later"
-        ],
-        "authors": [
-            {
-                "name": "Alvaro Videla",
-                "role": "Original Maintainer"
-            },
-            {
-                "name": "John Kelly",
-                "email": "johnmkelly86@gmail.com",
-                "role": "Maintainer"
-            },
-            {
-                "name": "Raúl Araya",
-                "email": "nubeiro@gmail.com",
-                "role": "Maintainer"
-            },
-            {
-                "name": "Luke Bakken",
-                "email": "luke@bakken.io",
-                "role": "Maintainer"
-            }
-        ],
-        "description": "Formerly videlalvaro/php-amqplib.  This library is a pure PHP implementation of the AMQP protocol. It's been tested against RabbitMQ.",
-        "homepage": "https://github.com/php-amqplib/php-amqplib/",
-        "keywords": [
-            "message",
-            "queue",
-            "rabbitmq"
-        ]
-    },
-    {
         "name": "phpseclib/phpseclib",
-        "version": "2.0.23",
-        "version_normalized": "2.0.23.0",
+        "version": "2.0.27",
+        "version_normalized": "2.0.27.0",
         "source": {
             "type": "git",
             "url": "https://github.com/phpseclib/phpseclib.git",
-            "reference": "c78eb5058d5bb1a183133c36d4ba5b6675dfa099"
+            "reference": "34620af4df7d1988d8f0d7e91f6c8a3bf931d8dc"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/c78eb5058d5bb1a183133c36d4ba5b6675dfa099",
-            "reference": "c78eb5058d5bb1a183133c36d4ba5b6675dfa099",
+            "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/34620af4df7d1988d8f0d7e91f6c8a3bf931d8dc",
+            "reference": "34620af4df7d1988d8f0d7e91f6c8a3bf931d8dc",
             "shasum": ""
         },
         "require": {
@@ -105,7 +29,7 @@
             "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
             "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
         },
-        "time": "2019-09-17T03:41:22+00:00",
+        "time": "2020-04-04T23:17:33+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {
