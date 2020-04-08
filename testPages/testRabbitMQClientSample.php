@@ -20,7 +20,7 @@ if ($response==1){
 else{
 	echo "Login unsuccessful!";
 }
-
+return $response;
 /*
 if(isset($argv[1])){
 	$msg = $argv[1];

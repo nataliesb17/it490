@@ -1,0 +1,8 @@
+BROKER_HOST=192.168.11.3
+BROKER_PORT=5672
+USER="rabbit"
+PASSWORD="rabbit"
+VHOST="testHost"
+EXCHANGE=testExchange
+QUEUE=testQueue
+AUTO_DELETE=true

@@ -8,6 +8,10 @@
         }
     ],
     "require": {
-        "php-amqplib/php-amqplib": "^2.10"
+        "php-amqplib/php-amqplib": "^2.11"
+    },
+    "require": {
+        "phpseclib/phpseclib": "^2.0.9"
     }
+
 }
