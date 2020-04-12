@@ -2,7 +2,7 @@
 
 function getHostInfo($server, array $extra = NULL){
 	$machine;
-	$machine[$server] = parse_ini_file("host.ini", $process_sections=true);
+	$machine[$server] = parse_ini_file("testRabbitMQ.ini", $process_sections=true);
 	if($extra != NULL){
 		foreach($extra as $ini){
 			$parsed = parse_ini_file($ini, true);
