@@ -15,12 +15,20 @@ class ComposerStaticInit45a3e4be73b640634ec6b25de97cc48f
         array (
             'phpseclib\\' => 10,
         ),
+        'P' => 
+        array (
+            'PhpAmqpLib\\' => 11,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'phpseclib\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
+        ),
+        'PhpAmqpLib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-amqplib/php-amqplib/PhpAmqpLib',
         ),
     );
 
