@@ -11,7 +11,7 @@ if(isset($_GET["query"])){
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-	CURLOPT_URL => "https://newsapi.org/v2/everything?q=$source&apiKey=$api_key",
+	CURLOPT_URL => "https://pokestefan-skliarovv1.p.rapidapi.com/getPokemonByName",
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_FOLLOWLOCATION => true,
 	CURLOPT_ENCODING => "",
@@ -22,8 +22,8 @@ curl_setopt_array($curl, array(
 	//CURLOPT_POSTFIELDS => "apiKey=$api_key&newsSource=$source",
 	CURLOPT_HTTPHEADER => array(
 		"content-type: application/x-www-form-urlencoded",
-		//"x-rapidapi-host: $rapid_api_host",
-		//"x-rapidapi-key: $rapid_api_key"
+		//"x-rapidapi-host: Pokestefan-skliarovV1.p.rapidapi.com",
+		//"x-rapidapi-key: 8f4292231amsh7b46958f4b80aa1p17a8f7jsn626c3ad1f8ba"
 	),
 ));
 
