@@ -13,6 +13,7 @@ $client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
 $username = $_POST['username'];
 $password = $_POST['password'];
 $req = array("type"=>"login", "username"=>$username, "password"=>$password);
+//$req = array("type"=>"login", "username"=>"testuser", "password"=>"testpass");
 $response = $client->send_request($req);
 if ($response==1){
 	echo 1;
