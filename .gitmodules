@@ -1,0 +1,3 @@
+[submodule "testPages/testPages/vendor/php-amqplib/php-amqplib"]
+	path = testPages/testPages/vendor/php-amqplib/php-amqplib
+	url = https://github.com/php-amqplib/php-amqplib.git
