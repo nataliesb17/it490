@@ -1,3 +1,8 @@
+<!--SESSION VARIABLES-->
+<?php 
+  session_start();
+?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -64,15 +69,6 @@
 	  <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
     </form>
   </div>
-
-<!--SESSION VARIABLES-->
-<?php 
-  session_start();
-  if (isset($_POST['username'])) { 
-   $_SESSION['user'] = $_POST['username'];
-  } 
-?>
-
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
