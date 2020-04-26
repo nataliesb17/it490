@@ -7,6 +7,7 @@ error_reporting(E_ALL);
 require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
+require_once('functions.php');
 
 //have client send message t
 $client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
