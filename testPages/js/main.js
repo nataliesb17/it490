@@ -18,6 +18,10 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
 		{ name: '', type: '', evolution: '', generation: '', img: ''},
 		{ name: '', type: '', evolution: '', generation: '', img: ''},
 		{ name: '', type: '', evolution: '', generation: '', img: ''},
+<<<<<<< HEAD
+=======
+		{ name: '', type: '', evolution: '', generation: '', img: ''},
+>>>>>>> e42b4c8df989e00d0630310c0b32b1e58ed746c0
 		{ name: '', type: '', evolution: '', generation: '', img: ''}
 	];
 
@@ -37,7 +41,10 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
 			'</div>' +
 			'</div>';
 		});
+<<<<<<< HEAD
 
+=======
+>>>>>>> e42b4c8df989e00d0630310c0b32b1e58ed746c0
 		// Set the contents of the table body to the new set of rendered HTML rows
 		pokemon.forEach(function (column) {
 			pokemonList.innerHTML += column; // += adds to HTML instead of overwriting it entirely.
@@ -119,4 +126,8 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
 		}
 	});
 })(); // Wrap entire file in self executing function. 
+<<<<<<< HEAD
       // Keeping all variables declared in this file inside a local scope.
+=======
+      // Keeping all variables declared in this file inside a local scope.
+>>>>>>> e42b4c8df989e00d0630310c0b32b1e58ed746c0
