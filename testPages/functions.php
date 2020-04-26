@@ -7,11 +7,11 @@ error_reporting(E_ALL);
 require_once('account.php'); //db credentials
 
 //redirect to different webpage
-function redirect($msg, $url, $delay){
+/*function redirect($msg, $url, $delay){
         echo "<br>$msg<br>";
         header("refresh:$delay url = $url");
         exit();
-}
+}*/
 
 
 //db authentication
@@ -24,7 +24,7 @@ function connect(){
         return $db;
 }
 
-function login($user,$pass){
+/*function login($user,$pass){
         //database connection
         $db = connect();
         echo "$db" . "login function";
@@ -57,6 +57,33 @@ function login($user,$pass){
                 'userID' => $userID,
                 'msg' => $msg
         );
+}*/
+
+function signin($user){
+        unset($_SESSION['user']);
+        $_SESSION['user'] = $user;
+}
+
+function signout(){
+        session_unset();
+        session_destroy();
+        header("Location: signout.html");
+}
+
+function isSignedIn($redirect=false){
+        if(isset($_SESSION['user'])){
+                return true;
+        }
+        if($redirect){
+                header("Location: signin.html");
+        }
+}
+
+function getUser($redirect=false){
+        if(isSignedIn($redirect)){
+                return $_SESSION['user'];
+        }
+        return false;
 }
 
 ?>
