@@ -53,76 +53,88 @@
       <!-- /Navbar -->
       <!-- Sidebar  -->
     <nav id="sidebar" class="navbar navbar-light bg-light">
-      <div class="sidebar-header">
-          <h3>Create Teams</h3>
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li><p>Filters</p></li>
+            <li>
+            <form id="search" class="form-inline">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success text-center" type="submit">Search</button>
+            </form>
+            </li>
+          <li>
+
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Name
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="name" name="name">
+                  <button class="dropdown-item" type="button" value="nameaz">Name [A-Z]</button>
+                  <button class="dropdown-item" type="button" value="nameza">Name [Z-A]</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Type
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="type" name="type">
+                  <button class="dropdown-item" type="button" value="normal">Normal</button>
+                  <button class="dropdown-item" type="button" value="fire">Fire</button>
+                  <button class="dropdown-item" type="button" value="water">Water</button>
+                  <button class="dropdown-item" type="button" value="electric">Electric</button>
+                  <button class="dropdown-item" type="button" value="grass">Grass</button>
+                  <button class="dropdown-item" type="button" value="ice">Ice</button>
+                  <button class="dropdown-item" type="button" value="fighting">Fighting</button>
+                  <button class="dropdown-item" type="button" value="poison">Poison</button>
+                  <button class="dropdown-item" type="button" value="ground">Ground</button>
+                  <button class="dropdown-item" type="button" value="flying">Flying</button>
+                  <button class="dropdown-item" type="button" value="psychic">Psychic</button>
+                  <button class="dropdown-item" type="button" value="bug">Bug</button>
+                  <button class="dropdown-item" type="button" value="rock">Rock</button>
+                  <button class="dropdown-item" type="button" value="ghost">Ghost</button>
+                  <button class="dropdown-item" type="button" value="dragon">Dragon</button>
+                  <button class="dropdown-item" type="button" value="dark">Dark</button>
+                  <button class="dropdown-item" type="button" value="steel">Steel</button>
+                  <button class="dropdown-item" type="button" value="fairy">Fairy</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Evolution
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="evolution" name="evolution">
+                  <button class="dropdown-item" type="button" value="lowest">Lowest</button>
+                  <button class="dropdown-item" type="button" value="middle">Middle</button>
+                  <button class="dropdown-item" type="button" value="highest">Highest</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="generation" name="generation">
+                  <button class="dropdown-item" type="button" value="I">I</button>
+                  <button class="dropdown-item" type="button" value="II">II</button>
+                  <button class="dropdown-item" type="button"value="III">III</button>
+                  <button class="dropdown-item" type="button" value="IV">IV</button>
+                  <button class="dropdown-item" type="button" value="V">V</button>
+                  <button class="dropdown-item" type="button" value="VI">VI</button>
+                  <button class="dropdown-item" type="button" value="VII">VII</button>
+                  <button class="dropdown-item" type="button" value="VIII">VIII</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul class="list-unstyled components">
-        <div class="col text-center">
-          <form id="search" class="form-inline">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success text-center" type="submit">Search</button>
-          </form>
-        </div>
-        <p>Filters</p>
-        <div class="form-group">
-          <a class="nav-link">
-            <label for="sortMenu">Name</label>
-            <select id="sortMenu" name="sortMenu">
-              <option value="nameaz">Name [A-Z]</option>
-              <option value="nameza">Name [Z-A]</option>
-            </select>
-          </a>
-        </div>
-        <div class="form-group">
-          <a class="nav-link">
-            <label for="type">Type</label>  
-            <select id="type" name="type">
-              <option value="normal">Normal</option>
-              <option value="fire">Fire</option>
-              <option value="water">Water</option>
-              <option value="electric">Electric</option>
-              <option value="grass">Grass</option>
-              <option value="ice">Ice</option>
-              <option value="fighting">Fighting</option>
-              <option value="poison">Poison</option>
-              <option value="ground">Ground</option>
-              <option value="flying">Flying</option>
-              <option value="psychic">Psychic</option>
-              <option value="bug">Bug</option>
-              <option value="rock">Rock</option>
-              <option value="ghost">Ghost</option>
-              <option value="dragon">Dragon</option>
-              <option value="dark">Dark</option>
-              <option value="steel">Steel</option>
-              <option value="fairy">Fairy</option>
-            </select>
-          </a>
-        </div>
-        <div class="form-group">  
-          <a class="nav-link">
-            <label for="evolution">Evolution</label>  
-            <select id="evolution" name="evolution">
-              <option value="lowest">Lowest</option>
-              <option value="middle">Middle</option>
-              <option value="highest">Highest</option>
-            </select>
-          </a>
-        </div>
-        <div class="form-group">  
-          <a class="nav-link">
-            <label for="generation">Generation</label>  
-            <select id="generation" name="generation">
-              <option value="I">I</option>
-              <option value="II">II</option>
-              <option value="III">III</option>
-              <option value="IV">IV</option>
-              <option value="V">V</option>
-              <option value="VI">VI</option>
-              <option value="VII">VII</option>
-              <option value="VIII">VIII</option>
-            </select>
-          </a>
-        </div>
     </nav>
     <!-- /Sidebar -->
 
