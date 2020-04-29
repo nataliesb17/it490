@@ -1,5 +1,6 @@
 <?php 
-  session_start();
+require_once('functions.php');
+session_start();
 ?>
 
 <!doctype html>
@@ -43,7 +44,7 @@
           <li class="nav-item">
             <a class="nav-link" href="createTeams.php">Create Teams </a>
           </li>
-          <?php if(Client::isSignedIn()):?>
+         <?php if(Client::isSignedIn()):?>
           <li class="nav-item">
             <a class="nav-link" href="profile.php">My Profile <span class="sr-only"></span></a>
           </li>
@@ -62,7 +63,7 @@
                         <a class="nav-link" href="signout.php">Sign out</a>
                 </li>
         </ul>
-        <?php endif; ?>
+        <?php// endif; ?>
       </div>
     </nav>
     <!-- /Navbar -->
@@ -82,7 +83,7 @@
           <div class="col-md-4">
             <h2>Create Teams</h2>
             <p>Create teams of six pokémon to battle against others! Save your all-star teams in your Fantasy Pokémon League.</p>
-            <p><a class="btn btn-secondary" href="createTeams.html" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="createTeams.php" role="button">View details &raquo;</a></p>
           </div>
           <div class="col-md-4">
             <h2>Battle Pokémon</h2>
@@ -92,7 +93,7 @@
           <div class="col-md-4">
             <h2>View Profile</h2>
             <p>After creating your teams, all of your teams will be saved to your profile. Check them out here!</p>
-            <p><a class="btn btn-secondary" href="profile.html" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="profile.php" role="button">View details &raquo;</a></p>
           </div>
         </div>
         <hr>
