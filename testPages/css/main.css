@@ -108,7 +108,7 @@ textarea {
     align-items: stretch;
 }
 
-#sidebar {
+/*#sidebar {
     min-width: 250px;
     max-width: 250px;
     max-height: 750px;
@@ -120,7 +120,7 @@ textarea {
 #sidebar.active {
     margin-left: -250px;
 }
-
+*/
 #sidebar .sidebar-header {
     padding: 20px;
     padding-bottom: 0px;
