@@ -9,26 +9,16 @@ require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 require_once('functions.php');
 
-//have client send message t
+//have client send message
 $client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
-$username = $_POST['username'];
-$password = $_POST['password'];
-$req = array("type"=>"login", "username"=>$username, "password"=>$password);
-//$req = array("type"=>"login", "username"=>"testuser", "password"=>"testpass");
-$response = $client->send_request($req);
-if ($response==1){
-	echo 1;
-}
-else{
-	echo "Login unsuccessful!";
-}
-return $response;
-/*
+
 if(isset($argv[1])){
 	$msg = $argv[1];
+	//$msg = array("query"=>$argv[1], "type"=> "get_news");
 }
 else{
 	$msg = array("message"=>"test message", "type"=>"echo");
+	//$msg = array("query"=>"corona", "type"=>"get_news");
 }
 
 $response = $client->send_request($msg);
@@ -38,5 +28,5 @@ print_r($response);
 echo "\n\n";
 
 if(isset($argv[0]))
-	echo $argv[0] . " END".PHP_EOL;
- */
+echo $argv[0] . " END".PHP_EOL;
+?>

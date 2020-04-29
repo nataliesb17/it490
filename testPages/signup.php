@@ -1,12 +1,17 @@
 <?php 
 	session_start();
-	if(	   isset($_POST['email']) 
-		&& isset($_POST['password'])
-		&& isset($_POST['username'])
-		){
-		$pass = $_POST['password'];
-		$username = $_POST['username'];
+	$name = "";
+	$email = "";
+	$username = "";
+  	$password = "";
+	if(isset($_POST['name']) && $_POST['email']) && $_POST['username']) && $_POST['password'])){
+		$name = $_POST['name'];
 		$email = $_POST['email'];
+		$user = $_POST['username'];
+		$pass = $_POST['password'];
+		require_once('functions.php');
+		$data = Client::signup($name, $email, $user, $pass);
+		$output = array("data"=>json_decode($data,true));
 	}
 ?>
 
@@ -58,7 +63,7 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <form class="form-signin" method="POST" action="testRabbitMQClientSample.php">
+  <form class="form-signin" method="POST">
 	  <img class="mb-4" src="" alt="" width="72" height="72">
 	  <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
     <label for="name" class="sr-only">Name</label>
@@ -76,7 +81,7 @@
 	    </label>
 	  </div>
 	  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
-	  <br> <p><a href="index.html"><<< Return to homepage</a></p>
+	  <br> <p><a href="index.php"><<< Return to homepage</a></p>
 	  <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
   </form>
 
