@@ -160,7 +160,8 @@
       </div>
       <!-- /Card Row 1 -->
       <!-- Card Row 2 -->
-      <div class="card-group">
+      <div id="pokemonRow" class="row" style="padding-top: 15px;">
+          <div class="col">
           <div id="pokemon" class="card" style="width: 18rem;">
             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
             <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
@@ -197,9 +198,9 @@
           </div>
         </div>
       </div>
-      <!-- /Card Row 2 -->
+    <!-- /Card Row 2 -->
     <!-- /My Team -->
-  <!-- /Page Content -->
+  </div> <!-- /Page Content -->
   <!-- Footer -->
     <footer class="container">
       <p>&copy; 2020 </p>
