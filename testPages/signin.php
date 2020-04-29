@@ -1,11 +1,18 @@
-<!--SESSION VARIABLES-->
 <?php 
+  require_once('functions.php');
   session_start();
+  $username = "";
+  $password = "";
+  if(isset($_POST['username']) && $_POST['password'])){
+    $user = $_POST['username'];
+    $pass = $_POST['password'];
+    $data = Client::signin($user, $pass);
+    $output = array("data"=>json_decode($data,true));
+  }
 ?>
 
 <!doctype html>
 <html class="no-js" lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>Fantasy Pokémon - Sign in</title>
@@ -51,21 +58,21 @@
   <![endif]-->
  <!-- Add your site or application content here -->
   <div class="container">
-    <form class="form-signin" method="POST" action="testRabbitMQClientSample.php">
+    <form class="form-signin" method="POST">
   	  <img class="mb-4" src="" alt="" width="72" height="72">
   	  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
   	  <label for="username" class="sr-only">Username</label>
   	  <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
   	  <label for="password" class="sr-only">Password</label>
   	  <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
-  	  <p>Don't have an account? Sign up <a href="signup.html">here</a>.</p>
+  	  <p>Don't have an account? Sign up <a href="signup.php">here</a>.</p>
   	  <div class="checkbox mb-3">
   	    <label>
   	      <input type="checkbox" value="remember-me"> Remember me
   	    </label>
   	  </div>
   	  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-	  <br> <p><a href="index.html"><<< Return to homepage</a></p>
+	  <br> <p><a href="index.php"><<< Return to homepage</a></p>
 	  <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
     </form>
   </div>

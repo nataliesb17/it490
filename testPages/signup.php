@@ -1,6 +1,18 @@
-<!--SESSION VARIABLES-->
 <?php 
-  session_start();
+	session_start();
+	$name = "";
+	$email = "";
+	$username = "";
+  	$password = "";
+	if(isset($_POST['name']) && $_POST['email']) && $_POST['username']) && $_POST['password'])){
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$user = $_POST['username'];
+		$pass = $_POST['password'];
+		require_once('functions.php');
+		$data = Client::signup($name, $email, $user, $pass);
+		$output = array("data"=>json_decode($data,true));
+	}
 ?>
 
 <!doctype html>
@@ -8,7 +20,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Fantasy Pokémon - Sign in</title>
+  <title>Fantasy Pokémon - Sign up</title>
   <meta name="description" content="IT 490 - 5 Braincells Project">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -49,26 +61,29 @@
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
- <!-- Add your site or application content here -->
-  <div class="container">
-    <form class="form-signin" method="POST" action="testRabbitMQClientSample.php">
-  	  <img class="mb-4" src="" alt="" width="72" height="72">
-  	  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-  	  <label for="username" class="sr-only">Username</label>
-  	  <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
-  	  <label for="password" class="sr-only">Password</label>
-  	  <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
-  	  <p>Don't have an account? Sign up <a href="signup.html">here</a>.</p>
-  	  <div class="checkbox mb-3">
-  	    <label>
-  	      <input type="checkbox" value="remember-me"> Remember me
-  	    </label>
-  	  </div>
-  	  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-	  <br> <p><a href="index.html"><<< Return to homepage</a></p>
+
+  <!-- Add your site or application content here -->
+  <form class="form-signin" method="POST">
+	  <img class="mb-4" src="" alt="" width="72" height="72">
+	  <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+    <label for="name" class="sr-only">Name</label>
+    <input type="text" id="name" name="name" class="form-control" placeholder="Name" required autofocus>
+    <label for="email" class="sr-only">Email address</label>
+    <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+	  <label for="username" class="sr-only">Username</label>
+	  <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
+	  <label for="password" class="sr-only">Password</label>
+	  <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+	  <p>Already have an account? Sign in <a href="signin.html">here</a>.</p>
+	  <div class="checkbox mb-3">
+	    <label>
+	      <input type="checkbox" value="remember-me"> Remember me
+	    </label>
+	  </div>
+	  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+	  <br> <p><a href="index.php"><<< Return to homepage</a></p>
 	  <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
-    </form>
-  </div>
+  </form>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
