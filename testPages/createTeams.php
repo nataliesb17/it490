@@ -160,7 +160,7 @@
       </div>
       <!-- /Card Row 1 -->
       <!-- Card Row 2 -->
-      <div class="col">
+      <div class="card-group">
           <div id="pokemon" class="card" style="width: 18rem;">
             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
             <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
