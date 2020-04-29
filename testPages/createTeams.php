@@ -116,7 +116,6 @@
     <!-- /Sidebar -->
     <!-- Page Content  -->
     <div id="content">
-
       <h1>Create your own fantasy Pokémon teams!</h1>
       <p>Create teams of 6 pokemon to battle against opponents. Who's party will be victorious?</p>
       <h3> My Team </h3>
@@ -188,8 +187,7 @@
           </div>
         </div>
         <!-- /Card Row 2 -->
-      </div><!-- /My Team -->
-  </div><!-- /Wrapper -->
+        <!-- /My Team -->
   <!-- /Page Content -->
   <!-- Footer -->
     <footer class="container">
