@@ -52,85 +52,61 @@
       </nav>
       <!-- /Navbar -->
       <!-- Sidebar  -->
-    <nav id="sidebar" class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li><p>Filters</p></li>
-            <li>
-            <form id="search" class="form-inline">
-              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success text-center" type="submit">Search</button>
-            </form>
-            </li>
-          <li>
-
-            <li>
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Name
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="name" name="name">
-                  <button class="dropdown-item" type="button" value="nameaz">Name [A-Z]</button>
-                  <button class="dropdown-item" type="button" value="nameza">Name [Z-A]</button>
+            <li class="nav-item"><p>Filters</p></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Name</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="name" name="name">
+                  <a class="dropdown-item" value="nameaz">Name [A-Z]</a>
+                  <a class="dropdown-item" value="nameza">Name [Z-A]</a>
                 </div>
-              </div>
             </li>
-            <li>
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Type
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="type" name="type">
-                  <button class="dropdown-item" type="button" value="normal">Normal</button>
-                  <button class="dropdown-item" type="button" value="fire">Fire</button>
-                  <button class="dropdown-item" type="button" value="water">Water</button>
-                  <button class="dropdown-item" type="button" value="electric">Electric</button>
-                  <button class="dropdown-item" type="button" value="grass">Grass</button>
-                  <button class="dropdown-item" type="button" value="ice">Ice</button>
-                  <button class="dropdown-item" type="button" value="fighting">Fighting</button>
-                  <button class="dropdown-item" type="button" value="poison">Poison</button>
-                  <button class="dropdown-item" type="button" value="ground">Ground</button>
-                  <button class="dropdown-item" type="button" value="flying">Flying</button>
-                  <button class="dropdown-item" type="button" value="psychic">Psychic</button>
-                  <button class="dropdown-item" type="button" value="bug">Bug</button>
-                  <button class="dropdown-item" type="button" value="rock">Rock</button>
-                  <button class="dropdown-item" type="button" value="ghost">Ghost</button>
-                  <button class="dropdown-item" type="button" value="dragon">Dragon</button>
-                  <button class="dropdown-item" type="button" value="dark">Dark</button>
-                  <button class="dropdown-item" type="button" value="steel">Steel</button>
-                  <button class="dropdown-item" type="button" value="fairy">Fairy</button>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="type" name="type">
+                  <a class="dropdown-item" value="normal">Normal</a>
+                  <a class="dropdown-item" value="fire">Fire</a>
+                  <a class="dropdown-item" value="water">Water</a>
+                  <a class="dropdown-item" value="electric">Electric</a>
+                  <a class="dropdown-item" value="grass">Grass</a>
+                  <a class="dropdown-item" value="ice">Ice</a>
+                  <a class="dropdown-item" value="fighting">Fighting</a>
+                  <a class="dropdown-item" value="poison">Poison</a>
+                  <a class="dropdown-item" value="ground">Ground</a>
+                  <a class="dropdown-item" value="flying">Flying</a>
+                  <a class="dropdown-item" value="psychic">Psychic</a>
+                  <a class="dropdown-item" value="bug">Bug</a>
+                  <a class="dropdown-item" value="rock">Rock</a>
+                  <a class="dropdown-item" value="ghost">Ghost</a>
+                  <a class="dropdown-item" value="dragon">Dragon</a>
+                  <a class="dropdown-item" value="dark">Dark</a>
+                  <a class="dropdown-item" value="steel">Steel</a>
+                  <a class="dropdown-item" value="fairy">Fairy</a>
                 </div>
-              </div>
             </li>
-            <li>
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Evolution
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="evolution" name="evolution">
-                  <button class="dropdown-item" type="button" value="lowest">Lowest</button>
-                  <button class="dropdown-item" type="button" value="middle">Middle</button>
-                  <button class="dropdown-item" type="button" value="highest">Highest</button>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Evolution</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="evolution" name="evolution">
+                  <a class="dropdown-item" value="lowest">Lowest</a>
+                  <a class="dropdown-item" value="middle">Middle</a>
+                  <a class="dropdown-item" value="highest">Highest</a>
                 </div>
-              </div>
             </li>
-            <li>
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="generation" name="generation">
-                  <button class="dropdown-item" type="button" value="I">I</button>
-                  <button class="dropdown-item" type="button" value="II">II</button>
-                  <button class="dropdown-item" type="button"value="III">III</button>
-                  <button class="dropdown-item" type="button" value="IV">IV</button>
-                  <button class="dropdown-item" type="button" value="V">V</button>
-                  <button class="dropdown-item" type="button" value="VI">VI</button>
-                  <button class="dropdown-item" type="button" value="VII">VII</button>
-                  <button class="dropdown-item" type="button" value="VIII">VIII</button>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Generation</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="generation" name="generation">
+                  <a class="dropdown-item"  value="I">I</a>
+                  <a class="dropdown-item"  value="II">II</a>
+                  <a class="dropdown-item" value="III">III</a>
+                  <a class="dropdown-item"  value="IV">IV</a>
+                  <a class="dropdown-item"  value="V">V</a>
+                  <a class="dropdown-item"  value="VI">VI</a>
+                  <a class="dropdown-item"  value="VII">VII</a>
+                  <a class="dropdown-item"  value="VIII">VIII</a>
                 </div>
-              </div>
             </li>
           </ul>
         </div>
