@@ -15,8 +15,8 @@
   <!--Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body class="text-center">
@@ -32,18 +32,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home </a>
+                <a class="nav-link" href="index.php">Home </a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="createTeams.html">Create Teams <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="createTeams.php">Create Teams <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="profile.html">My Profile </a>
+                <a class="nav-link" href="profile.php">My Profile </a>
               </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item my-2 my-lg-0">
-                        <a class="nav-link" href="#">Sign out</a>
+                        <a class="nav-link" href="signout.php">Sign out</a>
                 </li>
             </ul>
           </div>
@@ -119,8 +119,9 @@
       <h1>Create your own fantasy Pokémon teams!</h1>
       <p>Create teams of 6 pokemon to battle against opponents. Who's party will be victorious?</p>
       <h3> My Team </h3>
-      <div id="pokemonRow" class="card-row" style="padding-top: 15px;">
+      <div id="pokemonRow" class="row" style="padding-top: 15px;">
         <!-- Card Row 1 -->
+        <div class="col">
           <div id="pokemon" class="card" style="width: 18rem;">
             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
             <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
@@ -131,50 +132,8 @@
             <p id="generation" value="" class="card-text">Generation</p>
             </div>
           </div>
-          <div id="pokemon" class="card" style="width: 18rem;">
-            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
-            <div class="card-body">
-            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
-            <p id="type" value="" class="card-text">Type</p>
-            <p id="evolution" value="" class="card-text">Evolution</p>
-            <p id="generation" value="" class="card-text">Generation</p>
-            </div>
-          </div>
-          <div id="pokemon" class="card" style="width: 18rem;">
-            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
-            <div class="card-body">
-            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
-            <p id="type" value="" class="card-text">Type</p>
-            <p id="evolution" value="" class="card-text">Evolution</p>
-            <p id="generation" value="" class="card-text">Generation</p>
-            </div>
-          </div>
-        </div>
-        <!-- /Card Row 1 -->
-        <!-- Card Row 2 -->
-        <div id="pokemonRow" class="card-row" style="padding-top: 15px;">
-          <div id="pokemon" class="card" style="width: 18rem;">
-            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
-            <div class="card-body">
-            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
-            <p id="type" value="" class="card-text">Type</p>
-            <p id="evolution" value="" class="card-text">Evolution</p>
-            <p id="generation" value="" class="card-text">Generation</p>
-            </div>
-          </div>
-          <div id="pokemon" class="card" style="width: 18rem;">
-            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
-            <div class="card-body">
-            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
-            <p id="type" value="" class="card-text">Type</p>
-            <p id="evolution" value="" class="card-text">Evolution</p>
-            <p id="generation" value="" class="card-text">Generation</p>
-            </div>
-          </div>
+        </div> 
+        <div class="col">
           <div id="pokemon" class="card" style="width: 18rem;">
             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
             <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
@@ -186,8 +145,60 @@
             </div>
           </div>
         </div>
-        <!-- /Card Row 2 -->
-        <!-- /My Team -->
+        <div class="col">
+          <div id="pokemon" class="card" style="width: 18rem;">
+            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
+            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
+            <div class="card-body">
+            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
+            <p id="type" value="" class="card-text">Type</p>
+            <p id="evolution" value="" class="card-text">Evolution</p>
+            <p id="generation" value="" class="card-text">Generation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Card Row 1 -->
+      <!-- Card Row 2 -->
+      <div class="col">
+          <div id="pokemon" class="card" style="width: 18rem;">
+            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
+            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
+            <div class="card-body">
+            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
+            <p id="type" value="" class="card-text">Type</p>
+            <p id="evolution" value="" class="card-text">Evolution</p>
+            <p id="generation" value="" class="card-text">Generation</p>
+            </div>
+          </div>
+        </div> 
+        <div class="col">
+          <div id="pokemon" class="card" style="width: 18rem;">
+            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
+            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
+            <div class="card-body">
+            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
+            <p id="type" value="" class="card-text">Type</p>
+            <p id="evolution" value="" class="card-text">Evolution</p>
+            <p id="generation" value="" class="card-text">Generation</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="pokemon" class="card" style="width: 18rem;">
+            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
+            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
+            <div class="card-body">
+            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
+            <p id="type" value="" class="card-text">Type</p>
+            <p id="evolution" value="" class="card-text">Evolution</p>
+            <p id="generation" value="" class="card-text">Generation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Card Row 2 -->
+    <!-- /My Team -->
   <!-- /Page Content -->
   <!-- Footer -->
     <footer class="container">
@@ -198,8 +209,8 @@
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="../js/plugins.js"></script>
-  <!--  <script src="../js/main.js"></script> -->
+  <script src="js/plugins.js"></script>
+  <!--  <script src="js/main.js"></script> -->
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
