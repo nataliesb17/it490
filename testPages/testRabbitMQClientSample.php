@@ -13,8 +13,8 @@ require_once('functions.php');
 $client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
 
 if(isset($argv[1])){
-	$msg = $argv[1];
-	//$msg = array("query"=>$argv[1], "type"=> "get_news");
+	//$msg = $argv[1];
+	$msg = array("userInfo"=>$argv[1], "type"=> "signin");
 }
 else{
 	$msg = array("message"=>"test message", "type"=>"echo");

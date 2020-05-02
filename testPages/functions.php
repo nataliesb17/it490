@@ -34,10 +34,13 @@ class Client{
                 require_once('rabbitMQLib.inc');
                 try{
                         $client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
-                        $msg = ("type"=>"signin", "username"=>$user, "password"=>$pass);
-                        $response = $client->send_request($msg); 
-                        //$payload = json_encode($response);      
-                        return $response;
+                        $msg = array("type"=>"signin", "username"=>$user, "password"=>$pass);
+			$response = $client->send_request($msg);
+		     	//$output = array("data"=>json_decode($response, true));
+               		//error_log(var_export($response,true), 0);	
+			//$payload = json_encode($response);
+		  	//print_r($payload);	
+			return $response;
                 }
                 catch(Exception $e){
                         return $e->getMessage();
@@ -51,7 +54,7 @@ class Client{
                 require_once('account.php'); //db credentials
                 try{
                         $client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
-                        $msg = ("type"=>"signup", "name"=>$name, "email"=>$email, "username"=>$user, "password"=>$pass);
+                        $msg = array("type"=>"signup", "name"=>$name, "email"=>$email, "username"=>$user, "password"=>$pass);
                         $response = $client->send_request($msg);       
                         return $response;
                 }
@@ -89,7 +92,7 @@ class Client{
                 require_once('account.php'); //db credentials
                 try{
                         $client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
-                        $msg = ("type"=>"getUserInfo", "username"=>$user);
+                        $msg = array("type"=>"getUserInfo", "username"=>$user);
                         $response = $client->send_request($msg); 
                         return $response;
                 }

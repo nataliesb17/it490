@@ -1,14 +1,16 @@
 <?php 
-  require_once('functions.php');
+  include('functions.php');
   session_start();
   $username = "";
   $password = "";
   if(isset($_POST['username']) && $_POST['password'])){
     $user = $_POST['username'];
     $pass = $_POST['password'];
-    $data = Client::signin($user, $pass);
-    $output = array("data"=>json_decode($data,true));
+    //$response = $client->signin($user, $pass);
+    //$data = Client::signin($user, $pass);
+    //output = array("data"=>json_decode($data,true));
   }
+  $response = $client->signin($user, $pass);
 ?>
 
 <!doctype html>

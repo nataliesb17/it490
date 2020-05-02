@@ -28,7 +28,8 @@ function request_processor($req){
 	switch($type){
 		case "signin":
 			$user = $req['username'];
-			$pass = HASHBYTE ('SHA1', "$req['password']");
+			$_pass = $req['password'];
+			$pass = HASHBYTE ('SHA1', $_pass);
 			//database connection
             $db = Client::connect();
             //validate credentials
@@ -42,23 +43,26 @@ function request_processor($req){
                     $signin = true;
                     unset($_SESSION['user']);
                     $_SESSION['user'] = $user;
-                    $msg = "Sign in successful."
-                    echo $msg;
+                    $msg = "Sign in successful.";
+                   // echo $msg;
                 }
                 Client::redirect("Signing in as $user...", "index.php", 3);
             }
             else{
             	$signin = false;
                 $msg = "Please use valid credentials.";
-    			echo $msg;
+    			//echo $msg;
                 Client::redirect("Loading...", "signin.php", 3);
             }
-            return $signin;
+	    //return $signin;
+	    return array("return_code" => '0',
+		"message" => "Server received request and processed it");
             break;
 		case 'signup':
 			$signup = false;
 			$user = $req['username'];
-			$pass = HASHBYTE ('SHA1', "$req['password']");
+			//$pass = HASHBYTE ('SHA1', "$req['password']");
+			$pass = $req['password'];
 			$email = $req['email'];
 			$name = $req['name'];
 			//database connection
@@ -70,7 +74,7 @@ function request_processor($req){
             if($rows > 0){
                 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
                 	$signup = false;
-                	echo "User already exists. Please select another username."
+                	//echo "User already exists. Please select another username."
                 	Client::redirect("Loading...", "signup.php", 3);
                 }
             }
