@@ -38,6 +38,7 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
 			'</div>' +
 			'</div>';
 		});
+
 		// Set the contents of the table body to the new set of rendered HTML rows
 		pokemon.forEach(function (column) {
 			pokemonList.innerHTML += column; // += adds to HTML instead of overwriting it entirely.

@@ -1,3 +1,4 @@
+<?php ?>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -25,109 +26,102 @@
 
   <!-- Add your site or application content here -->
   <div class="wrapper">
-    <!-- Sidebar  -->
-    <nav id="sidebar" class="navbar navbar-light bg-light">
-      <div class="sidebar-header">
-          <h3>Create Teams</h3>
-      </div>
-      <ul class="list-unstyled components">
-        <div class="col text-center">
-          <form id="search" class="form-inline">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success text-center" type="submit">Search</button>
-          </form>
-        </div>
-        <p>Filters</p>
-        <div class="form-group">
-          <a class="nav-link">
-            <label for="sortMenu">Name</label>
-            <select id="sortMenu" name="sortMenu">
-              <option value="nameaz">Name [A-Z]</option>
-              <option value="nameza">Name [Z-A]</option>
-            </select>
-          </a>
-        </div>
-        <div class="form-group">
-          <a class="nav-link">
-            <label for="type">Type</label>  
-            <select id="type" name="type">
-              <option value="normal">Normal</option>
-              <option value="fire">Fire</option>
-              <option value="water">Water</option>
-              <option value="electric">Electric</option>
-              <option value="grass">Grass</option>
-              <option value="ice">Ice</option>
-              <option value="fighting">Fighting</option>
-              <option value="poison">Poison</option>
-              <option value="ground">Ground</option>
-              <option value="flying">Flying</option>
-              <option value="psychic">Psychic</option>
-              <option value="bug">Bug</option>
-              <option value="rock">Rock</option>
-              <option value="ghost">Ghost</option>
-              <option value="dragon">Dragon</option>
-              <option value="dark">Dark</option>
-              <option value="steel">Steel</option>
-              <option value="fairy">Fairy</option>
-            </select>
-          </a>
-        </div>
-        <div class="form-group">  
-          <a class="nav-link">
-            <label for="evolution">Evolution</label>  
-            <select id="evolution" name="evolution">
-              <option value="lowest">Lowest</option>
-              <option value="middle">Middle</option>
-              <option value="highest">Highest</option>
-            </select>
-          </a>
-        </div>
-        <div class="form-group">  
-          <a class="nav-link">
-            <label for="generation">Generation</label>  
-            <select id="generation" name="generation">
-              <option value="I">I</option>
-              <option value="II">II</option>
-              <option value="III">III</option>
-              <option value="IV">IV</option>
-              <option value="V">V</option>
-              <option value="VI">VI</option>
-              <option value="VII">VII</option>
-              <option value="VIII">VIII</option>
-            </select>
-          </a>
-        </div>
-    </nav>
-    <!-- /Sidebar -->
-
-    <!-- Page Content  -->
-    <div id="content">
-      <!-- Navbar -->
+    <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home </a>
+                <a class="nav-link" href="index.php">Home </a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="createTeams.html">Create Teams <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="createTeams.php">Create Teams <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="profile.html">My Profile </a>
+                <a class="nav-link" href="profile.php">My Profile </a>
               </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item my-2 my-lg-0">
+                        <a class="nav-link" href="signout.php">Sign out</a>
+                </li>
             </ul>
           </div>
         </div>
       </nav>
       <!-- /Navbar -->
-
+      <!-- Sidebar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link disabled" href="#">Filters</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Name</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="name" name="name">
+                  <a class="dropdown-item" value="nameaz">Name [A-Z]</a>
+                  <a class="dropdown-item" value="nameza">Name [Z-A]</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="type" name="type">
+                  <a class="dropdown-item" value="normal">Normal</a>
+                  <a class="dropdown-item" value="fire">Fire</a>
+                  <a class="dropdown-item" value="water">Water</a>
+                  <a class="dropdown-item" value="electric">Electric</a>
+                  <a class="dropdown-item" value="grass">Grass</a>
+                  <a class="dropdown-item" value="ice">Ice</a>
+                  <a class="dropdown-item" value="fighting">Fighting</a>
+                  <a class="dropdown-item" value="poison">Poison</a>
+                  <a class="dropdown-item" value="ground">Ground</a>
+                  <a class="dropdown-item" value="flying">Flying</a>
+                  <a class="dropdown-item" value="psychic">Psychic</a>
+                  <a class="dropdown-item" value="bug">Bug</a>
+                  <a class="dropdown-item" value="rock">Rock</a>
+                  <a class="dropdown-item" value="ghost">Ghost</a>
+                  <a class="dropdown-item" value="dragon">Dragon</a>
+                  <a class="dropdown-item" value="dark">Dark</a>
+                  <a class="dropdown-item" value="steel">Steel</a>
+                  <a class="dropdown-item" value="fairy">Fairy</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Evolution</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="evolution" name="evolution">
+                  <a class="dropdown-item" value="lowest">Lowest</a>
+                  <a class="dropdown-item" value="middle">Middle</a>
+                  <a class="dropdown-item" value="highest">Highest</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Generation</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="generation" name="generation">
+                  <a class="dropdown-item"  value="I">I</a>
+                  <a class="dropdown-item"  value="II">II</a>
+                  <a class="dropdown-item" value="III">III</a>
+                  <a class="dropdown-item"  value="IV">IV</a>
+                  <a class="dropdown-item"  value="V">V</a>
+                  <a class="dropdown-item"  value="VI">VI</a>
+                  <a class="dropdown-item"  value="VII">VII</a>
+                  <a class="dropdown-item"  value="VIII">VIII</a>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /Sidebar -->
+    <!-- Page Content  -->
+    <div id="content">
       <h1>Create your own fantasy Pokémon teams!</h1>
       <p>Create teams of 6 pokemon to battle against opponents. Who's party will be victorious?</p>
       <h3> My Team </h3>
-      <div id="pokemonList" class="card-row" style="padding-top: 15px;">
-        <!-- Card Columns 1 -->
-        <div id="pokemonList" class="card-columns" style="padding-top: 15px;">
+      <div id="pokemonRow" class="card-deck" style="padding-top: 15px;">
+        <!-- Card Row 1 -->
+        <div class="col">
           <div id="pokemon" class="card" style="width: 18rem;">
             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
             <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
@@ -138,50 +132,8 @@
             <p id="generation" value="" class="card-text">Generation</p>
             </div>
           </div>
-          <div id="pokemon" class="card" style="width: 18rem;">
-            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
-            <div class="card-body">
-            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
-            <p id="type" value="" class="card-text">Type</p>
-            <p id="evolution" value="" class="card-text">Evolution</p>
-            <p id="generation" value="" class="card-text">Generation</p>
-            </div>
-          </div>
-          <div id="pokemon" class="card" style="width: 18rem;">
-            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
-            <div class="card-body">
-            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
-            <p id="type" value="" class="card-text">Type</p>
-            <p id="evolution" value="" class="card-text">Evolution</p>
-            <p id="generation" value="" class="card-text">Generation</p>
-            </div>
-          </div>
-        </div>
-        <!-- /Card Columns 1 -->
-        <!-- Card Columns 2 -->
-        <div id="pokemonList" class="card-columns" style="padding-top: 15px;">
-          <div id="pokemon" class="card" style="width: 18rem;">
-            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
-            <div class="card-body">
-            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
-            <p id="type" value="" class="card-text">Type</p>
-            <p id="evolution" value="" class="card-text">Evolution</p>
-            <p id="generation" value="" class="card-text">Generation</p>
-            </div>
-          </div>
-          <div id="pokemon" class="card" style="width: 18rem;">
-            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
-            <div class="card-body">
-            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
-            <p id="type" value="" class="card-text">Type</p>
-            <p id="evolution" value="" class="card-text">Evolution</p>
-            <p id="generation" value="" class="card-text">Generation</p>
-            </div>
-          </div>
+        </div> 
+        <div class="col">
           <div id="pokemon" class="card" style="width: 18rem;">
             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
             <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
@@ -193,12 +145,62 @@
             </div>
           </div>
         </div>
-        <!-- /Card Columns 2 -->
-      <!-- /My Team -->
+        <div class="col">
+          <div id="pokemon" class="card" style="width: 18rem;">
+            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
+            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
+            <div class="card-body">
+            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
+            <p id="type" value="" class="card-text">Type</p>
+            <p id="evolution" value="" class="card-text">Evolution</p>
+            <p id="generation" value="" class="card-text">Generation</p>
+            </div>
+          </div>
         </div>
       </div>
-  </div>
-  <!-- /Page Content -->
+      <!-- /Card Row 1 -->
+      <!-- Card Row 2 -->
+      <div id="pokemonRow" class="card-deck" style="padding-top: 15px;">
+          <div class="col">
+          <div id="pokemon" class="card" style="width: 18rem;">
+            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
+            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
+            <div class="card-body">
+            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
+            <p id="type" value="" class="card-text">Type</p>
+            <p id="evolution" value="" class="card-text">Evolution</p>
+            <p id="generation" value="" class="card-text">Generation</p>
+            </div>
+          </div>
+        </div> 
+        <div class="col">
+          <div id="pokemon" class="card" style="width: 18rem;">
+            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
+            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
+            <div class="card-body">
+            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
+            <p id="type" value="" class="card-text">Type</p>
+            <p id="evolution" value="" class="card-text">Evolution</p>
+            <p id="generation" value="" class="card-text">Generation</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="pokemon" class="card" style="width: 18rem;">
+            <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
+            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
+            <div class="card-body">
+            <p id="name" value="" class="card-text" style="font-weight: bold;">Name</p>
+            <p id="type" value="" class="card-text">Type</p>
+            <p id="evolution" value="" class="card-text">Evolution</p>
+            <p id="generation" value="" class="card-text">Generation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- /Card Row 2 -->
+    <!-- /My Team -->
+  </div> <!-- /Page Content -->
   <!-- Footer -->
     <footer class="container">
       <p>&copy; 2020 </p>
@@ -224,4 +226,3 @@
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 </html>
-
