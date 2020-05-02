@@ -44,20 +44,20 @@ session_start();
           <li class="nav-item">
             <a class="nav-link" href="createTeams.php">Create Teams </a>
           </li>
-         <?php if(Client::isSignedIn()):?>
+         <?php //if(Client::isSignedIn()):?>
           <li class="nav-item">
             <a class="nav-link" href="profile.php">My Profile <span class="sr-only"></span></a>
           </li>
-          <?php endif; ?>
+          <?php //endif; ?>
         </ul>
-        <?php if(Client::!isSignedIn()):?>
+        <?php //if(Client::!isSignedIn()):?>
         <ul class="navbar-nav ml-auto">
                 <li class="nav-item my-2 my-lg-0">
                         <a class="nav-link" href="signin.php">Sign in</a>
                 </li>
         </ul>
-        <?php endif; ?>
-        <?php if(Client::isSignedIn()):?>
+        <?php //endif; ?>
+        <?php //if(Client::isSignedIn()):?>
         <ul class="navbar-nav ml-auto">
                 <li class="nav-item my-2 my-lg-0">
                         <a class="nav-link" href="signout.php">Sign out</a>

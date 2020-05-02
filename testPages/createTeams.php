@@ -119,7 +119,7 @@
       <h1>Create your own fantasy Pokémon teams!</h1>
       <p>Create teams of 6 pokemon to battle against opponents. Who's party will be victorious?</p>
       <h3> My Team </h3>
-      <div id="pokemonRow" class="row" style="padding-top: 15px;">
+      <div id="pokemonRow" class="card-deck" style="padding-top: 15px;">
         <!-- Card Row 1 -->
         <div class="col">
           <div id="pokemon" class="card" style="width: 18rem;">
@@ -160,7 +160,7 @@
       </div>
       <!-- /Card Row 1 -->
       <!-- Card Row 2 -->
-      <div id="pokemonRow" class="row" style="padding-top: 15px;">
+      <div id="pokemonRow" class="card-deck" style="padding-top: 15px;">
           <div class="col">
           <div id="pokemon" class="card" style="width: 18rem;">
             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
