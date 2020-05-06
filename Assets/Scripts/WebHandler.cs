@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using System;
 
-
+[Serializable]
 public class WebHandler : MonoBehaviour
 {
 
     public string url;
     public string data_str = "";
-    public string[] party;
+    public string[] test_variable;
     public PokemonBase[] serialized_party;
 
     public void FetchData()
@@ -26,17 +27,18 @@ public class WebHandler : MonoBehaviour
         WWW req = new WWW(url);
         yield return req;
         data_str = req.text;
-        party = data_str.Split(',');
+        test_variable = data_str.Split(',');
         Debug.Log("Data: " + data_str);
-        Debug.Log("Party: " + party);
+        Debug.Log("Party: " + test_variable);
 
         //Json
         string json_str = JsonUtility.ToJson(data_str);
-        PokemonBase poke = new PokemonBase();
-        poke = JsonUtility.FromJson<PokemonBase>(json_str);
+        PokemonWrapper poke = new PokemonWrapper();
+        
+        poke = JsonUtility.FromJson<PokemonWrapper>(json_str);
         //serialized_party[0] = poke;
-        Debug.Log("POKEMON NAME: " + poke.name);
-        Debug.Log("POKEMON ID: " + poke.pokemonid);
+        Debug.Log(poke.FetchName());
+        
        // Debug.Log(serialized_party[0]);
         
     }

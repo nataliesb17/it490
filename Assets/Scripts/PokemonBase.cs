@@ -1,5 +1,5 @@
-﻿
-using System;
+﻿using System;
+using UnityEngine;
 
 [Serializable]
 public class PokemonBase 
@@ -16,3 +16,16 @@ public class PokemonBase
   
 }
 
+[Serializable]
+public class PokemonWrapper
+{
+    public PokemonBase pokemonObject;
+
+    
+
+    public string FetchName()
+    {
+        return pokemonObject.name;
+    }
+
+}
