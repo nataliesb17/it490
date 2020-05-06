@@ -1,4 +1,5 @@
 <?php 
+	include('testRabbitMQServerSample.php');
 	session_start();
 	$name = "";
 	$email = "";
@@ -9,9 +10,7 @@
 		$email = $_POST['email'];
 		$user = $_POST['username'];
 		$pass = $_POST['password'];
-		require_once('functions.php');
-		$data = Client::signup($name, $email, $user, $pass);
-		$output = array("data"=>json_decode($data,true));
+		signup($name, $email, $user, $pass);
 	}
 ?>
 
