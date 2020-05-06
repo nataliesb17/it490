@@ -1,63 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿
+using System;
 
-public class PokemonBase : MonoBehaviour
+[Serializable]
+public class PokemonBase 
 {
-        /** Identifiers **/
-        public int dex_ID;
-        public bool isPlayer;
-
-        /** String Vars **/
-        public string name;
-        public string[] type;
-
-        /** Battle Vars **/
-        public int health;
-        public int attack;
-        public int defense;
-        public int spAtk;
-        public int spDef;
-        public int speed;
-        public GameObject[] moves;
-
-        /** Sprite info **/
-        public Sprite frontSprite;
-        public Sprite backSprite;
-        public Sprite partySprite;
-
-        /** Private stats **/
-        private int victories;
-        private int losses;
-
-        /** Pokemon cry **/
-        public AudioClip cry;
-
-      
-    /*****Defined functions*****/
-
-    /* Handle attacks
-     * @param Use one of the gamobjects in the moves array
-     * */
-    public void Attack(GameObject move)
-    {
-
-    }
-
-    /* Handle taking damage from the enemy
-     * @param Enemy - pokemon doing damage
-     * @param self - the pokemon taking damage
-     * */
-    public void TakeDamage(GameObject enemy, GameObject self)
-    {
-
-    }
-
-    public void DealDamage(GameObject enemy, Pokemon self)
-    {
-        
-    }
-
-
-
+    public string pokemonid; //POKEMONID
+    public string name; //NAME
+    public string type1; //TYPE1
+    public string type2; //TYPE2
+    public string health; //HEALTH
+    public string move1; //MOVE1
+    public string move2; //MOVE2
+    public string move3; // VE3
+    public string move4; //MOVE
+  
 }
+

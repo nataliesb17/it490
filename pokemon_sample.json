@@ -1,0 +1,71 @@
+{
+    "data": {
+        "slot1": {
+            "pokemonid": "1",
+            "name": "bulbasaur",
+            "type1": "grass",
+            "type2": "poison",
+            "health": "45",
+            "move1": "RAZORLEAF",
+            "move2": "RAZORLEAF",
+            "move3": "RAZORLEAF",
+            "move4": "RAZORLEAF"
+        },
+    
+        "slot2":{
+            "pokemon_id": "4",
+            "name": "charmander",
+            "type1": "fire",
+            "type2": "null",
+            "health": "39",
+            "move1": "EMBER",
+            "move2": "SCRATCH",
+            "move3": "SHIT",
+            "move4": "AHH"
+        },
+        "slot3": {
+            "pokemon_id": "7",
+            "name": "squirtle",
+            "type1": "water",
+            "type2": "null",
+            "health": "44",
+            "move1": "490",
+            "move2": "MAKES",
+            "move3": "ME",
+            "move4": "CRY"
+        },
+        "slot4": {
+            "pokemon_id": "86",
+            "name": "seel",
+            "type1": "water",
+            "type2": "null",
+            "health": "44",
+            "move1": "arf",
+            "move2": "Marf",
+            "move3": "arf",
+            "move4": "arf"
+        },
+        "slot5": {
+            "pokemon_id": "133",
+            "name": "eevee",
+            "type1": "normal",
+            "type2": "null",
+            "health": "44",
+            "move1": "eeee",
+            "move2": "eee",
+            "move3": "eee",
+            "move4": "eee"
+        },
+        "slot6": {
+            "pokemon_id": "37",
+            "name": "vuplix",
+            "type1": "fire",
+            "type2": "null",
+            "health": "44",
+            "move1": "yeeer",
+            "move2": "yeeet",
+            "move3": "asd",
+            "move4": "adsfg"
+        }
+    }
+}

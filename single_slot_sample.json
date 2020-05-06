@@ -1,0 +1,13 @@
+{
+        "slot1": {
+            "pokemonid": "1",
+            "name": "bulbasaur",
+            "type1": "grass",
+            "type2": "poison",
+            "health": "45",
+            "move1": "RAZORLEAF",
+            "move2": "RAZORLEAF",
+            "move3": "RAZORLEAF",
+            "move4": "RAZORLEAF"
+        }
+}
