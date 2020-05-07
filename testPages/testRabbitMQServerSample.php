@@ -31,6 +31,7 @@ function redirect($message, $url, $delay){
 
 function signin($user, $pass){
     try {
+    	require_once('account.php'); //db credentials
     	$success = false;
 	    $msg = "";
 	    $pass = hash('SHA1', $pass);
@@ -68,6 +69,7 @@ function signin($user, $pass){
 
 function signup($name, $email, $user, $pass){
 	try{
+		require_once('account.php'); //db credentials
 		$success = false;
 	    $msg = "";
 		$pass = hash('SHA1', $pass);
