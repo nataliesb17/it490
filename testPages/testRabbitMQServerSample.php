@@ -45,9 +45,9 @@ function signin($user, $pass){
 	        while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
 	            unset($_SESSION['user']);
 	            $_SESSION['user'] = $user;
-	            $msg = "Successfully signed in as $user";
 	        }
 	        $success = true;
+	        $msg = "Successfully signed in as $user";
 	        redirect("Signing in as $user...", "index.php", 3);
 	    }
 	    else{
@@ -111,12 +111,19 @@ function signout(){
 }
 function isSignedIn($redirect=false){
     try{
+    	$status = false;
         if(isset($_SESSION['user'])){
-            return true;
+            $redirect = false;
+            $status = true;
+        }
+        else{
+        	$redirect = true;
+        	$status = false;
         }
         if($redirect){
             redirect("Loading...", "signin.php", 3);
         }
+        return $status;
     }
     catch(Exception $e){
         return $e->getMessage();
@@ -157,7 +164,7 @@ function getUserInfo($user){
     }
 }
 
-function request_processor($req){
+function request_processor($request){
 	
 	$returnCode = 0;
 	$response = [];
@@ -166,12 +173,12 @@ function request_processor($req){
 	
 	
 	echo "Received Request".PHP_EOL;
-	echo "<pre>" . var_dump($req) . "</pre>";
-	if(!isset($req['type'])){
+	echo "<pre>" . var_dump($request) . "</pre>";
+	if(!isset($request['type'])){
 		return "Error: unsupported message type";
 	}
 	//Handle message type
-	$type = $req['type'];
+	$type = $request['type'];
 	switch($type){
 		case "signin":
 			$returnCode = 0;

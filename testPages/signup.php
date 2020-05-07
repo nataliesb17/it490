@@ -3,8 +3,8 @@
 	session_start();
 	$name = "";
 	$email = "";
-	$username = "";
-  	$password = "";
+	$user = "";
+  	$pass = "";
 	if(isset($_POST['name']) && $_POST['email']) && $_POST['username']) && $_POST['password'])){
 		$name = $_POST['name'];
 		$email = $_POST['email'];

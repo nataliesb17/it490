@@ -1,8 +1,8 @@
 <?php 
   include('testRabbitMQServerSample.php');
   session_start();
-  $username = "";
-  $password = "";
+  $user = "";
+  $pass = "";
   if(isset($_POST['username']) && $_POST['password'])){
     $user = $_POST['username'];
     $pass = $_POST['password'];
