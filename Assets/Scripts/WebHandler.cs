@@ -5,6 +5,7 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 using System;
 
+
 [Serializable]
 public class WebHandler : MonoBehaviour
 {
@@ -19,10 +20,9 @@ public class WebHandler : MonoBehaviour
         StartCoroutine(_FetchData());
     }
 
+    //Web requests
     public IEnumerator _FetchData()
-    {
-
-        //Web requests
+    {        
         Debug.Log(url);
         WWW req = new WWW(url);
         yield return req;
@@ -30,17 +30,21 @@ public class WebHandler : MonoBehaviour
         test_variable = data_str.Split(',');
         Debug.Log("Data: " + data_str);
         Debug.Log("Party: " + test_variable);
-
-        //Json
-        string json_str = JsonUtility.ToJson(data_str);
-        PokemonWrapper poke = new PokemonWrapper();
-        
-        poke = JsonUtility.FromJson<PokemonWrapper>(json_str);
-        //serialized_party[0] = poke;
-        Debug.Log(poke.FetchName());
-        
-       // Debug.Log(serialized_party[0]);
-        
+        CreatePokemonObjects(data_str);
     }
-    
+
+    //Parse json to PokemonBase class
+    public void CreatePokemonObjects(string datastr)
+    {
+        PokemonWrapper poke = new PokemonWrapper().CreateNewWrapper();
+        data_str.Trim();
+        poke = JsonUtility.FromJson<PokemonWrapper>(data_str);
+
+        Debug.Log(poke.slot1.name);
+        Debug.Log(poke.slot2.name);
+        Debug.Log(poke.slot3.name);
+        Debug.Log(poke.slot4.name);
+        Debug.Log(poke.slot5.name);
+        Debug.Log(poke.slot6.name);
+    }
 }
