@@ -33,7 +33,7 @@ function signin($user, $pass){
     try {
     	$success = false;
 	    $msg = "";
-	    $pass = HASHBYTE ('SHA1', $pass);
+	    $pass = hash('SHA1', $pass);
 	    //database connection
 	    $db = connect();
 	    //validate credentials
@@ -69,7 +69,7 @@ function signup($name, $email, $user, $pass){
 	try{
 		$success = false;
 	    $msg = "";
-		$pass = HASHBYTE ('SHA1', $pass);
+		$pass = hash('SHA1', $pass);
 		//database connection
 	    $db = connect();
 	    //insert new user info into db
