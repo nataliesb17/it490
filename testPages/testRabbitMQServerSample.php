@@ -8,7 +8,7 @@ require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 //require_once('functions.php'); //helper functions
-require_once('account.php'); //db credentials
+include('account.php'); //db credentials
 
 function connect (){
     require_once('account.php'); //db credentials
@@ -31,7 +31,6 @@ function redirect($message, $url, $delay){
 
 function signin($user, $pass){
     try {
-    	require_once('account.php'); //db credentials
     	$success = false;
 	    $msg = "";
 	    $pass = hash('SHA1', $pass);
@@ -69,7 +68,6 @@ function signin($user, $pass){
 
 function signup($name, $email, $user, $pass){
 	try{
-		require_once('account.php'); //db credentials
 		$success = false;
 	    $msg = "";
 		$pass = hash('SHA1', $pass);
