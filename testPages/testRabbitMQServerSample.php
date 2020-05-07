@@ -205,14 +205,19 @@ function request_processor($request){
 	      break;
 	    case "validate_session":
 				//return validate($req['session_id']);
-			case "echo":
-				return array("return_code"=>'0', "message"=>"Echo: " .$req["message"]);
+		case "echo":
+			return array("return_code"=>'0', "message"=>"Echo: " .$req["message"]);
 	    default:
-	      //do nothing
+	      	$returnCode = 0;
+            $message = "Default message.";
+            $payload = "default payload";
 	      break;
 		}
-		return array("return_code" => '0',
-			"message" => "Server received request and processed it");
+		$response = array("return_code" => $returnCode,
+			"message" => $message,
+			"payload" => $payload
+		);
+    	return $response;
 }
 
 $server = new rabbitMQServer("testRabbitMQ.ini", "testserver");
