@@ -11,16 +11,17 @@ require_once('rabbitMQLib.inc');
 include('account.php'); //db credentials
 
 function connect (){
-    require_once('account.php'); //db credentials
-    global $servername;
-    global $dbname;
+    include('account.php'); //db credentials
+    global $db;
+    global $project;
+    $db = mysqli_connect($servername ,$username ,$password ,$dbname);
     if (mysqli_connect_errno())
       {
               echo "Failed to connect to MySQL: " . mysqli_connect_error();
               exit();
       }  
     //echo "<br>Successfully connected to MySQL.<br>";
-    mysqli_select_db( $servername, $dbname );
+    mysqli_select_db( $db, $project );
 }
 
 function redirect($message, $url, $delay){
@@ -35,8 +36,7 @@ function signin($user, $pass){
 	    $msg = "";
 	    $pass = hash('SHA1', $pass);
 	    //database connection
-	    $db = mysqli_connect($servername ,$username ,$password ,$dbname);
-	    connect();
+	    $db = connect();
 	    //validate credentials
 	    $sql = "select * from user_info where username='$user' and password='$pass'";
 	    $result = mysqli_query($db, $sql) or die(mysqli_error());
@@ -72,8 +72,7 @@ function signup($name, $email, $user, $pass){
 	    $msg = "";
 		$pass = hash('SHA1', $pass);
 		//database connection
-	    $db = mysqli_connect($servername ,$username ,$password ,$dbname);
-	    connect();
+	    $db = connect();
 	    //insert new user info into db
 	    $sql = "select * from user_info where username='$user'";
 	    $result = mysqli_query($db, $sql) or die(mysqli_error());
