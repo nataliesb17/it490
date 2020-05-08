@@ -17,6 +17,7 @@ function connect (){
     global $password;
     global $dbname;
     include('account.php'); //db credentials 
+    echo $db . '' . $servername . '' . $username . '' . $password . '' . $dbname;
     $db = mysqli_connect($servername ,$username ,$password ,$dbname);
     print_r($db);
     if (mysqli_connect_errno())
