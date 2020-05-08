@@ -1,4 +1,4 @@
 	$servername = "localhost";
 	$username = "maniroopa";
-	$password = "maniroopa";
-	$dbname = "5BC-DB";
+	$password = "password";
+	$dbname = "pokemon_fantasy";
