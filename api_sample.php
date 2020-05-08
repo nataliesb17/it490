@@ -1,6 +1,5 @@
 <?php
 require("config.inc");
-$source = "bitcoin";
 if(isset($argv[1])){
 	//$argv[0] is name of script always
 	$source = $argv[1];

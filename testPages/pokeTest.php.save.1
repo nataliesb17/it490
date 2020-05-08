@@ -1,0 +1,11 @@
+<?php
+require_once(__DIR__ . "/vendor/autoload.php");
+use PokeAPI\Client
+$client = new Client();
+$species = $client->species('bulbasaur');
+$species->getName();
+
+echo serialize($species);
+
+
+?>
