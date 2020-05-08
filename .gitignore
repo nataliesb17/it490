@@ -2,4 +2,6 @@
 config.*
 testRabbitMQ.*
 host.*
-account.*
+/testPages/account.*
+/testPages/host.*
+/testPages/vendor/
