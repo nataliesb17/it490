@@ -11,17 +11,20 @@ require_once('rabbitMQLib.inc');
 include('account.php'); //db credentials
 
 function connect (){
-    include('account.php'); //db credentials
     global $db;
-    global $project;
+    global $servername;
+    global $username;
+    global $password;
+    global $dbname;
+    include('account.php'); //db credentials 
     $db = mysqli_connect($servername ,$username ,$password ,$dbname);
     if (mysqli_connect_errno())
       {
               echo "Failed to connect to MySQL: " . mysqli_connect_error();
               exit();
       }  
-    //echo "<br>Successfully connected to MySQL.<br>";
-    mysqli_select_db( $db, $project );
+    mysqli_select_db( $db, $dbname );
+    return "connection to databse successfull";
 }
 
 function redirect($message, $url, $delay){
