@@ -62,12 +62,20 @@ public class UIHandler : MonoBehaviour
 
         //** Update health **//
         HealthUpdate(userParty.FetchHealth(userParty.slot1), UI_slots[0]);
-        Debug.Log("SLOT1 HEALTH: " + userParty.FetchHealth(userParty.slot1));
+        HealthUpdate(userParty.FetchHealth(userParty.slot1), UI_slots[1]);
+        HealthUpdate(userParty.FetchHealth(userParty.slot1), UI_slots[2]);
+        HealthUpdate(userParty.FetchHealth(userParty.slot1), UI_slots[3]);
+        HealthUpdate(userParty.FetchHealth(userParty.slot1), UI_slots[4]);
+        HealthUpdate(userParty.FetchHealth(userParty.slot1), UI_slots[5]);
 
         //** Update moves **//
-        //MoveUpdate(userParty.FetchMoves(userParty.slot1), UI_slots[0]);
-
-        Debug.Log("UIHANDLER: SLOT1.name == " + userParty.slot1.name);
+        MoveUpdate(userParty.FetchMoves(userParty.slot1), UI_slots[0]);
+        MoveUpdate(userParty.FetchMoves(userParty.slot2), UI_slots[1]);
+        MoveUpdate(userParty.FetchMoves(userParty.slot3), UI_slots[2]);
+        MoveUpdate(userParty.FetchMoves(userParty.slot4), UI_slots[3]);
+        MoveUpdate(userParty.FetchMoves(userParty.slot5), UI_slots[4]);
+        MoveUpdate(userParty.FetchMoves(userParty.slot6), UI_slots[5]);
+        //Debug.Log("UIHANDLER: SLOT1.name == " + userParty.slot1.name);
     }
     
     public void _FetchPartyInfo()
@@ -131,8 +139,10 @@ public class UIHandler : MonoBehaviour
     public void MoveUpdate(string[] moves, GameObject slot)
     {
         GameObject text = slot.transform.Find("Moves").gameObject;
-        Text _text = slot.GetComponent<Text>();
-        
+        Text _text = text.GetComponent<Text>();
+        //Debug.Log(moves[0]);
+        _text.text = "MOVES: " + moves[0] + ", " + moves[1] + ", " + moves[2] + ", " + moves[3];
+
     }
 
     public void FetchPokemonCry(string name, GameObject slot) { }
