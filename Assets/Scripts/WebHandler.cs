@@ -13,8 +13,12 @@ public class WebHandler : MonoBehaviour
     public string url;
     public string data_str = "";
     public string[] test_variable;
-    public PokemonBase[] serialized_party;
+    public PokemonWrapper poke;
 
+    private void Start()
+    {
+        FetchData();
+    }
     public void FetchData()
     {
         StartCoroutine(_FetchData());
@@ -34,17 +38,19 @@ public class WebHandler : MonoBehaviour
     }
 
     //Parse json to PokemonBase class
-    public void CreatePokemonObjects(string datastr)
+    public PokemonWrapper CreatePokemonObjects(string datastr)
     {
-        PokemonWrapper poke = new PokemonWrapper().CreateNewWrapper();
+        poke = new PokemonWrapper().CreateNewWrapper();
         data_str.Trim();
         poke = JsonUtility.FromJson<PokemonWrapper>(data_str);
 
         Debug.Log(poke.slot1.name);
-        Debug.Log(poke.slot2.name);
+        Debug.Log(poke.slot2.pokemonid + " -- " + poke.slot2.name);
         Debug.Log(poke.slot3.name);
         Debug.Log(poke.slot4.name);
         Debug.Log(poke.slot5.name);
         Debug.Log(poke.slot6.name);
+      
+        return poke;
     }
 }
