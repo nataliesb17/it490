@@ -43,14 +43,14 @@ public class WebHandler : MonoBehaviour
         poke = new PokemonWrapper().CreateNewWrapper();
         data_str.Trim();
         poke = JsonUtility.FromJson<PokemonWrapper>(data_str);
-
+        /*
         Debug.Log(poke.slot1.name);
         Debug.Log(poke.slot2.pokemonid + " -- " + poke.slot2.name);
         Debug.Log(poke.slot3.name);
         Debug.Log(poke.slot4.name);
         Debug.Log(poke.slot5.name);
         Debug.Log(poke.slot6.name);
-      
+        */
         return poke;
     }
 }
