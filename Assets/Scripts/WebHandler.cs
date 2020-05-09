@@ -32,8 +32,8 @@ public class WebHandler : MonoBehaviour
         yield return req;
         data_str = req.text;
         test_variable = data_str.Split(',');
-        Debug.Log("Data: " + data_str);
-        Debug.Log("Party: " + test_variable);
+        //Debug.Log("Data: " + data_str);
+        //Debug.Log("Party: " + test_variable);
         CreatePokemonObjects(data_str);
     }
 
