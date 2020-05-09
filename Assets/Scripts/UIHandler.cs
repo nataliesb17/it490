@@ -75,7 +75,15 @@ public class UIHandler : MonoBehaviour
         MoveUpdate(userParty.FetchMoves(userParty.slot4), UI_slots[3]);
         MoveUpdate(userParty.FetchMoves(userParty.slot5), UI_slots[4]);
         MoveUpdate(userParty.FetchMoves(userParty.slot6), UI_slots[5]);
-        //Debug.Log("UIHANDLER: SLOT1.name == " + userParty.slot1.name);
+
+        //**Update audio clips **//
+        FetchPokemonCry(userParty.FetchName(userParty.slot1), UI_slots[0]);
+        FetchPokemonCry(userParty.FetchName(userParty.slot2), UI_slots[1]);
+        FetchPokemonCry(userParty.FetchName(userParty.slot3), UI_slots[2]);
+        FetchPokemonCry(userParty.FetchName(userParty.slot4), UI_slots[3]);
+        FetchPokemonCry(userParty.FetchName(userParty.slot5), UI_slots[4]);
+        FetchPokemonCry(userParty.FetchName(userParty.slot6), UI_slots[5]);
+
     }
     
     public void _FetchPartyInfo()
@@ -145,7 +153,13 @@ public class UIHandler : MonoBehaviour
 
     }
 
-    public void FetchPokemonCry(string name, GameObject slot) { }
+    public void FetchPokemonCry(string name, GameObject slot)
+    {
+        GameObject audio = slot.transform.Find("Audio").gameObject;
+        AudioSource _audio = audio.GetComponent<AudioSource>();
+        AudioClip cry = Resources.Load<AudioClip>("Audio/Pokemon_Cries/" + name);
+        _audio.clip = cry;
+    }
 
     
 }

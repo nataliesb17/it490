@@ -1,0 +1,70 @@
+{
+        "slot1": {
+            "pokemonid": "151",
+            "name": "mew",
+            "type1": "psychic",
+            "type2": "null",
+            "health": 245,
+            "move1": "PSYCHIC",
+            "move2": "METRONOME",
+            "move3": "PSYBEAM",
+            "move4": "CONFUSION"
+        },
+    
+        "slot2":{
+            "pokemon_id": "59",
+            "name": "arcanine",
+            "type1": "fire",
+            "type2": "null",
+            "health": 233,
+            "move1": "FLAMETHROWER",
+            "move2": "EXTREME SPEED",
+            "move3": "FLAME WHEEL",
+            "move4": "CRUNCH"
+        },
+        "slot3": {
+            "pokemon_id": "129",
+            "name": "magikarp",
+            "type1": "water",
+            "type2": "null",
+            "health": 23,
+            "move1": "FLAIL",
+            "move2": "SPLASH",
+            "move3": "NULL",
+            "move4": "NULL"
+        },
+        "slot4": {
+            "pokemon_id": "104",
+            "name": "cubone",
+            "type1": "ground",
+            "type2": "null",
+            "health": 76,
+            "move1": "BONE CLUB",
+            "move2": "MUD SLAP",
+            "move3": "TAIL WHIP",
+            "move4": "POUND"
+        },
+        "slot5": {
+            "pokemon_id": "9",
+            "name": "blastoise",
+            "type1": "water",
+            "type2": "null",
+            "health": 322,
+            "move1": "HYDRO PUMP",
+            "move2": "WATER PULSE",
+            "move3": "SURF",
+            "move4": "CRUNCH"
+        },
+        "slot6": {
+            "pokemon_id": "136",
+            "name": "flareon",
+            "type1": "fire",
+            "type2": "null",
+            "health": 145,
+            "move1": "FLAME THROWER",
+            "move2": "FLAME WHEEL",
+            "move3": "EMBER",
+            "move4": "TAIL WHIP"
+        }
+   
+}
