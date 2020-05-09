@@ -124,9 +124,8 @@ public class UIHandler : MonoBehaviour
     public void HealthUpdate(string health, GameObject slot)
     {
         GameObject text = slot.transform.Find("Health").gameObject;
-        Text _text = slot.GetComponent<Text>();
+        Text _text = text.GetComponent<Text>();
         _text.text = "HEALTH: " + health;
-        Debug.Log(health);
     }
 
     public void MoveUpdate(string[] moves, GameObject slot)
