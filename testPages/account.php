@@ -1,4 +1,4 @@
-	$servername = "3.136.115.121";
+	$servername = "localhost";
 	$username = "maniroopa";
 	$password = "password";
 	$dbname = "pokemon_fantasy";
