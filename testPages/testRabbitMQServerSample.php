@@ -20,7 +20,8 @@ function connect (){
     echo $db . '' . $servername . '' . $username . '' . $password . '' . $dbname;
     try{
     	$db = new PDO("mysql:host=$hostname;dbname=$dbname;",$username, $password);
-    	return "connection to databse successfull";
+    	echo "connection to databse successfull";
+    	return $db;
     }
     catch(PDOException $e){
     	echo 'Connection failed: ' . echo $e->getMessage();
@@ -51,11 +52,17 @@ function signin($user, $pass){
 	    $db = connect();
 	    //validate credentials
 	    $sql = "select * from user_info where username='$user' and password='$pass'";
-	    $result = mysqli_query($db, $sql) or die(mysqli_error());
-	    $rows = mysqli_num_rows($result);
+	    $statement = $db->prepare($sql);
+	    if(!$statement){
+	    	$db->errorInfo();
+	    }
+	    else{
+	    	$statement->execute();
+	    }
+	    $rows = $db->rowCount();
 	    $msg = "";
 	    if($rows > 0){
-	        while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC);){
 	            unset($_SESSION['user']);
 	            $_SESSION['user'] = $user;
 	        }
@@ -87,10 +94,16 @@ function signup($name, $email, $user, $pass){
 	    $db = connect();
 	    //insert new user info into db
 	    $sql = "select * from user_info where username='$user'";
-	    $result = mysqli_query($db, $sql) or die(mysqli_error());
-	    $rows = mysqli_num_rows($result);
+	    $statement = $db->prepare($sql);
+	    if(!$statement){
+	    	$db->errorInfo();
+	    }
+	    else{
+	    	$statement->execute();
+	    }
+	    $rows = $db->rowCount();
 	    if($rows > 0){
-	        while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC);){
 	        	$success = false;
 	        	$msg = "User already exists. Please select another username.";
 	        	redirect("Loading...", "signup.php", 3);
@@ -100,7 +113,13 @@ function signup($name, $email, $user, $pass){
 	    	$success = true;
 	    	$msg = "Successfully signed up as $user. Please sign in.";
 	        $sql = "insert into user_info (username, password, name, email) values ('$user', '$pass', '$name', '$email')";
-	    	$result = mysqli_query($db, $sql) or die(mysqli_error());
+	    	$statement = $db->prepare($sql);
+		    if(!$statement){
+		    	$db->errorInfo();
+		    }
+		    else{
+		    	$statement->execute();
+		    }
 	    	redirect("Loading sign in page...", "signin.php", 3);
 	    }
 	    return array(
@@ -150,10 +169,16 @@ function getUserInfo($user){
         $db = connect();
         //validate credentials
         $sql = "select * from user_info where username='$user'";
-        $result = mysqli_query($db, $sql) or die(mysqli_error());
-        $rows = mysqli_num_rows($result);
+        $statement = $db->prepare($sql);
+	    if(!$statement){
+	    	$db->errorInfo();
+	    }
+	    else{
+	    	$statement->execute();
+	    }
+	    $rows = $db->rowCount();
         if($rows > 0){
-            while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+            while($row = $statement->fetchAll(PDO::FETCH_ASSOC);){
             	$userInfo = array('name' => $row['name'], 'email' => $row['email'], 'username' => $row['username'], 'password' => $row['password']);
             	$_SESSION['name'] = $userInfo['name'];
             	$_SESSION['email'] = $userInfo['email'];
