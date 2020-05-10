@@ -11,7 +11,8 @@ require_once('rabbitMQLib.inc');
 include('account.php'); //db credentials
 
 function connect (){
-    global $db =null;
+    global $db;
+    $db = null;
     global $servername;
     global $username;
     global $password;
@@ -19,12 +20,12 @@ function connect (){
     include('account.php'); //db credentials 
     echo $db . '' . $servername . '' . $username . '' . $password . '' . $dbname;
     try{
-    	$db = new PDO("mysql:host=$hostname;dbname=$dbname;",$username, $password);
+    	$db = new PDO("mysql:host=$servername;dbname=$dbname;",$username, $password);
     	echo "connection to databse successfull";
     	return $db;
     }
     catch(PDOException $e){
-    	echo 'Connection failed: ' . echo $e->getMessage();
+    	echo 'Connection failed: ' . $e->getMessage();
     }
     /*$db = mysqli_connect($servername ,$username ,$password ,$dbname);
     print_r($db);
@@ -62,7 +63,7 @@ function signin($user, $pass){
 	    $rows = $db->rowCount();
 	    $msg = "";
 	    if($rows > 0){
-	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC);){
+	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
 	            unset($_SESSION['user']);
 	            $_SESSION['user'] = $user;
 	        }
@@ -103,7 +104,7 @@ function signup($name, $email, $user, $pass){
 	    }
 	    $rows = $db->rowCount();
 	    if($rows > 0){
-	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC);){
+	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
 	        	$success = false;
 	        	$msg = "User already exists. Please select another username.";
 	        	redirect("Loading...", "signup.php", 3);
@@ -178,7 +179,7 @@ function getUserInfo($user){
 	    }
 	    $rows = $db->rowCount();
         if($rows > 0){
-            while($row = $statement->fetchAll(PDO::FETCH_ASSOC);){
+            while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
             	$userInfo = array('name' => $row['name'], 'email' => $row['email'], 'username' => $row['username'], 'password' => $row['password']);
             	$_SESSION['name'] = $userInfo['name'];
             	$_SESSION['email'] = $userInfo['email'];
