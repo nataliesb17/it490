@@ -11,13 +11,16 @@ require_once('rabbitMQLib.inc');
 include('account.php'); //db credentials
 
 function connect (){
+	include('account.php'); //db credentials 
     global $db;
-    //$db = null;
-    global $servername = "localhost";
-    global $username = "maniroopa";
-    global $password = "password";
-    global $dbname "pokemon_fantasy";
-    include('account.php'); //db credentials 
+    global $servername;
+    global $username; 
+    global $password; 
+    global $dbname; 
+    $servername = "localhost";
+    $username = "maniroopa";
+    $password = "password";
+    $dbname = "pokemon_fantasy";
     print("db = $db // servername = $servername // username = $username // password = $password // dbname = $dbname");
     try{
     	$db = new PDO("mysql:host=$servername;dbname=$dbname;",$username, $password);
