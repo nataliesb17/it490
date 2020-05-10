@@ -11,22 +11,29 @@ require_once('rabbitMQLib.inc');
 include('account.php'); //db credentials
 
 function connect (){
-    global $db;
+    global $db =null;
     global $servername;
     global $username;
     global $password;
     global $dbname;
     include('account.php'); //db credentials 
     echo $db . '' . $servername . '' . $username . '' . $password . '' . $dbname;
-    $db = mysqli_connect($servername ,$username ,$password ,$dbname);
+    try{
+    	$db = new PDO("mysql:host=$hostname;dbname=$dbname;",$username, $password);
+    	return "connection to databse successfull";
+    }
+    catch(PDOException $e){
+    	echo 'Connection failed: ' . echo $e->getMessage();
+    }
+    /*$db = mysqli_connect($servername ,$username ,$password ,$dbname);
     print_r($db);
     if (mysqli_connect_errno())
       {
               echo "Failed to connect to MySQL: " . mysqli_connect_error();
               exit();
       }  
-    mysqli_select_db( $db, $dbname );
-    return "connection to databse successfull";
+
+      mysqli_select_db( $db, $dbname );*/
 }
 
 function redirect($message, $url, $delay){
