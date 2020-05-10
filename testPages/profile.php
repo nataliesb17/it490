@@ -1,7 +1,7 @@
 <?php 
 	session_start();
-	require_once('functions.php');
-  	$userInfo = Client::getUserInfo($_SESSION['user']);
+	include('testRabbitMQServerSample.php');
+  	$userInfo = getUserInfo($_SESSION['user']);
     //get user info from $_SESSION variables
     $user = $_SESSION['user'];
     $pass = $_SESSION['password'];

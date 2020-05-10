@@ -1,6 +1,6 @@
 <?php 
 //require_once('functions.php');
-//require_once('testRabbitMQServerSample.php');
+include('testRabbitMQServerSample.php');
 session_start();
 ?>
 
