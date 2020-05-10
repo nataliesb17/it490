@@ -8,33 +8,29 @@ require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 
-//have client send message t
+//have client send message
+$request = array("type" => "signin","username" => "testuser","password" => "testpass");
+$req = json_decode($request, true);
 $client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
-$username = $_POST['username'];
-$password = $_POST['password'];
-$req = array("type"=>"login", "username"=>$username, "password"=>$password);
-$response = $client->send_request($req);
-if ($response==1){
-	echo 1;
-}
-else{
-	echo "Login unsuccessful!";
-}
-return $response;
-/*
-if(isset($argv[1])){
-	$msg = $argv[1];
-}
-else{
-	$msg = array("message"=>"test message", "type"=>"echo");
-}
-
-$response = $client->send_request($msg);
-
+$response = $client->send_request($request);
+$response = json_encode($response);
+print_r($response);
 echo "client received response: " . PHP_EOL;
 print_r($response);
 echo "\n\n";
 
 if(isset($argv[0]))
-	echo $argv[0] . " END".PHP_EOL;
- */
+echo $argv[0] . " END".PHP_EOL;
+
+/*
+if(isset($argv[1])){
+	//$msg = $argv[1];
+
+}
+else{
+
+}
+
+$response = $client->send_request($msg);
+*/
+?>

@@ -7,10 +7,170 @@ error_reporting(E_ALL);
 require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
+//require_once('functions.php'); //helper functions
+include('account.php'); //db credentials
 
-include('functions.php');
+function connect (){
+    global $db;
+    global $servername;
+    global $username;
+    global $password;
+    global $dbname;
+    include('account.php'); //db credentials 
+    echo $db . '' . $servername . '' . $username . '' . $password . '' . $dbname;
+    $db = mysqli_connect($servername ,$username ,$password ,$dbname);
+    print_r($db);
+    if (mysqli_connect_errno())
+      {
+              echo "Failed to connect to MySQL: " . mysqli_connect_error();
+              exit();
+      }  
+    mysqli_select_db( $db, $dbname );
+    return "connection to databse successfull";
+}
 
-function request_processor($req){
+function redirect($message, $url, $delay){
+    echo "<br> $message <br><br>";
+    header ("refresh:$delay url = $url");
+    exit(); 
+}
+
+function signin($user, $pass){
+    try {
+    	$success = false;
+	    $msg = "";
+	    $pass = hash('SHA1', $pass);
+	    //database connection
+	    $db = connect();
+	    //validate credentials
+	    $sql = "select * from user_info where username='$user' and password='$pass'";
+	    $result = mysqli_query($db, $sql) or die(mysqli_error());
+	    $rows = mysqli_num_rows($result);
+	    $msg = "";
+	    if($rows > 0){
+	        while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+	            unset($_SESSION['user']);
+	            $_SESSION['user'] = $user;
+	        }
+	        $success = true;
+	        $msg = "Successfully signed in as $user";
+	        redirect("Signing in as $user...", "index.php", 3);
+	    }
+	    else{
+	    	$success = false;
+	        $msg = "Please use valid credentials.";
+	        redirect("Loading...", "signin.php", 3);
+	    }
+	    return array(
+	    	'success' => $success,
+	    	'msg' => $msg
+	    );
+    } 
+    catch(Exception $e){
+        return $e->getMessage();
+    }
+}
+
+function signup($name, $email, $user, $pass){
+	try{
+		$success = false;
+	    $msg = "";
+		$pass = hash('SHA1', $pass);
+		//database connection
+	    $db = connect();
+	    //insert new user info into db
+	    $sql = "select * from user_info where username='$user'";
+	    $result = mysqli_query($db, $sql) or die(mysqli_error());
+	    $rows = mysqli_num_rows($result);
+	    if($rows > 0){
+	        while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+	        	$success = false;
+	        	$msg = "User already exists. Please select another username.";
+	        	redirect("Loading...", "signup.php", 3);
+	        }
+	    }
+	    else{
+	    	$success = true;
+	    	$msg = "Successfully signed up as $user. Please sign in.";
+	        $sql = "insert into user_info (username, password, name, email) values ('$user', '$pass', '$name', '$email')";
+	    	$result = mysqli_query($db, $sql) or die(mysqli_error());
+	    	redirect("Loading sign in page...", "signin.php", 3);
+	    }
+	    return array(
+	    	'success' => $success,
+	    	'msg' => $msg
+	    );
+	}
+	catch(Exception $e){
+        return $e->getMessage();
+    }
+}
+function signout(){
+    try{
+        session_unset();
+        session_destroy();
+        redirect("Signing out...", "signout.php", 3);      
+    }
+    catch(Exception $e){
+        return $e->getMessage();
+    }
+}
+function isSignedIn($redirect=false){
+    try{
+    	$status = false;
+        if(isset($_SESSION['user'])){
+            $redirect = false;
+            $status = true;
+        }
+        else{
+        	$redirect = true;
+        	$status = false;
+        }
+        if($redirect){
+            redirect("Loading...", "signin.php", 3);
+        }
+        return $status;
+    }
+    catch(Exception $e){
+        return $e->getMessage();
+    }
+}
+function getUserInfo($user){
+    try{
+    	$success = false;
+    	$msg = "";
+		//database connection
+        $db = connect();
+        //validate credentials
+        $sql = "select * from user_info where username='$user'";
+        $result = mysqli_query($db, $sql) or die(mysqli_error());
+        $rows = mysqli_num_rows($result);
+        if($rows > 0){
+            while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+            	$userInfo = array('name' => $row['name'], 'email' => $row['email'], 'username' => $row['username'], 'password' => $row['password']);
+            	$_SESSION['name'] = $userInfo['name'];
+            	$_SESSION['email'] = $userInfo['email'];
+            	$_SESSION['user'] = $userInfo['username'];
+            	$_SESSION['password'] = $userInfo['password'];
+            	$success = true;
+            	$msg = print_r($userInfo);
+            }
+        }
+        else{
+        	$success = false;
+            $msg = 'Could not retrieve user information.';
+        }
+        return array(
+	    	'success' => $success,
+	    	'msg' => $msg
+	    );
+    }
+    catch(Exception $e){
+        return $e->getMessage();
+    }
+}
+
+function request_processor($request){
 	
 	$returnCode = 0;
 	$response = [];
@@ -19,30 +179,51 @@ function request_processor($req){
 	
 	
 	echo "Received Request".PHP_EOL;
-	echo "<pre>" . var_dump($req) . "</pre>";
-	if(!isset($req['type'])){
+	echo "<pre>" . var_dump($request) . "</pre>";
+	if(!isset($request['type'])){
 		return "Error: unsupported message type";
 	}
 	//Handle message type
-	$type = $req['type'];
+	$type = $request['type'];
 	switch($type){
-		case "login":
+		case "signin":
 			$returnCode = 0;
-			$message = "request recieved successfully";
-			$payload = login($request['username'], $request['password']);
-			return login($req['username'], $req['password']);
-    case "redirect":
-      break;
-    case "validate_session":
-			return validate($req['session_id']);
+            $message = "request recieved successfully";
+            $payload = signin($request['username'], $request['password']);
+            break;
+		case 'signup':
+			$returnCode = 0;
+            $message = "request recieved successfully";
+            $payload = signup($request['name'], $request['email'], $request['username'], $request['password']);
+			break;
+		case 'signout':
+			return signout();
+			break;
+		case 'isSignedIn':
+			return isSignedIn();
+			break;
+		case 'getUserInfo': 
+			$returnCode = 0;
+            $message = "request recieved successfully";
+            $payload = getUserInfo($request['username']);
+			break;
+	    case "redirect":
+	      break;
+	    case "validate_session":
+				//return validate($req['session_id']);
 		case "echo":
 			return array("return_code"=>'0', "message"=>"Echo: " .$req["message"]);
-    default:
-      //do nothing
-      break;
-	}
-	return array("return_code" => '0',
-		"message" => "Server received request and processed it");
+	    default:
+	      	$returnCode = 0;
+            $message = "Default message.";
+            $payload = "default payload";
+	      break;
+		}
+		$response = array("return_code" => $returnCode,
+			"message" => $message,
+			"payload" => $payload
+		);
+    	return $response;
 }
 
 $server = new rabbitMQServer("testRabbitMQ.ini", "testserver");

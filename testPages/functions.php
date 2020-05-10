@@ -5,58 +5,100 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once('account.php'); //db credentials
-
-//redirect to different webpage
-function redirect($msg, $url, $delay){
-        echo "<br>$msg<br>";
-        header("refresh:$delay url = $url");
-        exit();
-}
+require_once __DIR__ . '/vendor/autoload.php';
 
 
-//db authentication
-function connect(){
-        $db = msqli_connect($server, $user, $pass, $dbname);
-        echo "$db" . "connect function";
-        if(!db){
-                die('Connection failed: ' . mysqli_connect_error());
+class Client{
+        function connect (){
+                require_once('account.php'); //db credentials
+                global $db;
+                global $project;
+                if (mysqli_connect_errno())
+                  {
+                          echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                          exit();
+                  }  
+                //echo "<br>Successfully connected to MySQL.<br>";
+                mysqli_select_db( $db, $project );
         }
-        return $db;
-}
 
-function login($user,$pass){
-        //database connection
-        $db = connect();
-        echo "$db" . "login function";
-        //validate credentials
-        $sql = "select * from accounts where username='$user' and password='$pass'";
-        echo "$sql" . "login function";
+        function redirect($message, $url, $delay){
+                echo "<br> $message <br><br>";
+                header ("refresh:$delay url = $url");
+                exit(); 
+        }
 
-        $result = mysqli_query($db, $sql) or die(mysqli_error());
-
-        echo "$result" . "login function";
-
-
-        $rows = mysqli_num_rows($result);
-        $login = false;
-        $userID = "";
-        $msg = "";
-        if($rows > 0){
-	 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-                        $userID = $row["userId"];
-                        $login = true;
+        function signin($user, $pass){
+                require_once('path.inc');
+                require_once('get_host_info.inc');
+                require_once('rabbitMQLib.inc');
+                try{
+                        $client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
+                        $msg = array("type"=>"signin", "username"=>$user, "password"=>$pass);
+			$response = $client->send_request($msg);
+		     	//$output = array("data"=>json_decode($response, true));
+               		//error_log(var_export($response,true), 0);	
+			//$payload = json_encode($response);
+		  	//print_r($payload);	
+			return $response;
                 }
-                //redirect('Loading user profile...', 'profile.html', 3);
+                catch(Exception $e){
+                        return $e->getMessage();
+                }
         }
-        else{
-                $msg = "Please use valid credentials.";
-        }
-        //account details
-        return array(
-                'login' => $login,
-                'userID' => $userID,
-                'msg' => $msg
-        );
-}
 
+        function signup($name, $email, $user, $pass){
+                require_once('path.inc');
+                require_once('get_host_info.inc');
+                require_once('rabbitMQLib.inc');
+                require_once('account.php'); //db credentials
+                try{
+                        $client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
+                        $msg = array("type"=>"signup", "name"=>$name, "email"=>$email, "username"=>$user, "password"=>$pass);
+                        $response = $client->send_request($msg);       
+                        return $response;
+                }
+                catch(Exception $e){
+                        return $e->getMessage();
+                }
+        }
+        function signout(){
+                try{
+                        session_unset();
+                        session_destroy();
+                        Client::redirect("Signing out...", "signout.php", 3);      
+                }
+                catch(Exception $e){
+                        return $e->getMessage();
+                }
+        }
+        function isSignedIn($redirect=false){
+                try{
+                        if(isset($_SESSION['user'])){
+                                return true;
+                        }
+                        if($redirect){
+                                Client::redirect("Loading...", "signin.php", 3);
+                        }
+                }
+                catch(Exception $e){
+                        return $e->getMessage();
+                }
+        }
+        function getUserInfo($user){
+                require_once('path.inc');
+                require_once('get_host_info.inc');
+                require_once('rabbitMQLib.inc');
+                require_once('account.php'); //db credentials
+                try{
+                        $client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
+                        $msg = array("type"=>"getUserInfo", "username"=>$user);
+                        $response = $client->send_request($msg); 
+                        return $response;
+                }
+                catch(Exception $e){
+                        return $e->getMessage();
+                }
+        }
+}
 ?>

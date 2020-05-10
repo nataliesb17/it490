@@ -1,5 +1,7 @@
 /vendor/
 config.*
-testRabbitMQ.ini
-host.ini
-account.php
+testRabbitMQ.*
+host.*
+/testPages/account.*
+/testPages/host.*
+/testPages/vendor/
