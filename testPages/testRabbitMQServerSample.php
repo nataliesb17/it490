@@ -13,15 +13,16 @@ include('account.php'); //db credentials
 function connect (){
     global $db;
     //$db = null;
-    global $servername;
-    global $username;
-    global $password;
-    global $dbname;
+    global $servername = "localhost";
+    global $username = "maniroopa";
+    global $password = "password";
+    global $dbname "pokemon_fantasy";
     include('account.php'); //db credentials 
     print("db = $db // servername = $servername // username = $username // password = $password // dbname = $dbname");
     try{
     	$db = new PDO("mysql:host=$servername;dbname=$dbname;",$username, $password);
-    	echo "connection to databse successfull";
+    	print("$db");
+    	print "connection to databse successfull";
     	return $db;
     }
     catch(PDOException $e){
