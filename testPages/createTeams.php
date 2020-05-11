@@ -34,7 +34,7 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="createTeams.php">Create Teams <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="/Builds/BattleSim.html">Battle Pokémon</a>
                         </li>
                         <li class="nav-item">
@@ -119,7 +119,7 @@
             <h1>Create your own fantasy Pokémon teams!</h1>
             <p>Create teams of 6 pokemon to battle against opponents. Who's party will be victorious?</p>
             <h3> My Team </h3>
-            <div id="team" style="align-content: center;">
+            <div id="team" style="position: center;">
                 <div id="pokemonRow" class="card-deck" style="padding-top: 15px;">
                     <!-- Card Row 1 -->
                     <div class="col">
