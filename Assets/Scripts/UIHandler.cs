@@ -133,7 +133,7 @@ public class UIHandler : MonoBehaviour
     {
         GameObject text = slot.transform.Find("Name").gameObject;
         Text _text = text.GetComponent<Text>();
-        _text.text = "NAME: " + name;     
+        _text.text = "<b>NAME:</b> " + name;     
 
     }
 
@@ -141,7 +141,7 @@ public class UIHandler : MonoBehaviour
     {
         GameObject text = slot.transform.Find("Health").gameObject;
         Text _text = text.GetComponent<Text>();
-        _text.text = "HEALTH: " + health;
+        _text.text = "<b>HEALTH:</b> " + health;
     }
 
     public void MoveUpdate(string[] moves, GameObject slot)
@@ -149,7 +149,7 @@ public class UIHandler : MonoBehaviour
         GameObject text = slot.transform.Find("Moves").gameObject;
         Text _text = text.GetComponent<Text>();
         //Debug.Log(moves[0]);
-        _text.text = "MOVES: " + moves[0] + ", " + moves[1] + ", " + moves[2] + ", " + moves[3];
+        _text.text = "<b>MOVES:</b> " + moves[0] + ", " + moves[1] + ", " + moves[2] + ", " + moves[3];
 
     }
 
