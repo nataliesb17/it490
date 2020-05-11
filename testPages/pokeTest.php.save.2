@@ -1,0 +1,18 @@
+<?php
+require_once(__DIR__ . "/vendor/autoload.php");
+use PokeAPI\Client;
+
+$a = 1;
+$client = new Client();
+
+for ($a = 1; $a <= 6; $a++) {
+
+$species = $client->species($a);
+$type = $species->getId();
+$name =  $species->getName();
+
+echo $a . " " . $name . " ";
+
+}
+
+?>
