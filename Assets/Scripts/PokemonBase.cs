@@ -4,7 +4,7 @@ using UnityEngine;
 [Serializable]
 public class PokemonBase 
 {
-    public string pokemonid; //POKEMONID
+    public string pokemon_id; //POKEMONID
     public string name; //NAME
     public string type1; //TYPE1
     public string type2; //TYPE2
@@ -51,7 +51,7 @@ public class PokemonWrapper
 
     public string FetchDexID(PokemonBase obj)
     {
-        return obj.pokemonid;
+        return obj.pokemon_id;
     }
 
     public string FetchType_01(PokemonBase obj)

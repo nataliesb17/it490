@@ -1,6 +1,6 @@
 {
         "slot1": {
-            "pokemonid": "151",
+            "pokemon_id": "151",
             "name": "mew",
             "type1": "psychic",
             "type2": "null",

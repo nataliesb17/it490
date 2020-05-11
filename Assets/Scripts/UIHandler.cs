@@ -159,7 +159,5 @@ public class UIHandler : MonoBehaviour
         AudioSource _audio = audio.GetComponent<AudioSource>();
         AudioClip cry = Resources.Load<AudioClip>("Audio/Pokemon_Cries/" + name);
         _audio.clip = cry;
-    }
-
-    
+    } 
 }
