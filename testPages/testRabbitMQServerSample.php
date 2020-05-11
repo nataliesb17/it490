@@ -19,7 +19,7 @@ function connect (){
     global $dbname; 
     $servername = "localhost";
     $username = "maniroopa";
-    $password = "password";
+    $password = "Pokemon_fantasy321";
     $dbname = "pokemon_fantasy";
     print("db = $db // servername = $servername // username = $username // password = $password // dbname = $dbname");
     try{
