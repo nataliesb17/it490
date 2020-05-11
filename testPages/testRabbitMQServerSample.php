@@ -53,6 +53,7 @@ function signin($user, $pass){
 	        $success = true;
 	        $msg = "Successfully signed in as $user";
 	       	print("Message: $msg");
+	       	header('Location: index.php');
 	    }
 	    else{
 	    	$success = false;
