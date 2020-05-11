@@ -1,6 +1,5 @@
 <?php 
-//include('testRabbitMQServerSample.php');
-session_start();
+  session_start();
 ?>
 
 <!doctype html>
@@ -31,7 +30,7 @@ session_start();
   <!-- Add your site or application content here -->
   <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Fantasy Pokémon</a>
+      <a class="navbar-brand" href="index.php">Fantasy Pokémon</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,7 +43,14 @@ session_start();
           <li class="nav-item">
             <a class="nav-link" href="createTeams.php">Create Teams </a>
           </li>
+<<<<<<< HEAD
          <?php //if(isset($_SESSION['user'])) : ?>
+=======
+          <li class="nav-item">
+            <a class="nav-link" href="/Builds/BattleSim.html">Battle Pokémon</a>
+          </li>
+         <?php if(isset($_SESSION['user'])) : ?>
+>>>>>>> c2bcbab80605ada7b0ed7823585b2ad8173aecf3
           <li class="nav-item">
             <a class="nav-link" href="profile.php">My Profile <span class="sr-only"></span></a>
           </li>
@@ -88,7 +94,7 @@ session_start();
           <div class="col-md-4">
             <h2>Battle Pokémon</h2>
             <p>Show off your battle skills! Put your teams to the test by battlingother teams in the Fantasy Pokémon League. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="/Builds/BattleSim.html" role="button">View details &raquo;</a></p>
           </div>
           <div class="col-md-4">
             <h2>View Profile</h2>

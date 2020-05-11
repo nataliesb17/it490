@@ -1,12 +1,5 @@
 <?php 
 	session_start();
-	//include('testRabbitMQServerSample.php');
-  	$userInfo = getUserInfo($_SESSION['user']);
-    //get user info from $_SESSION variables
-    $user = $_SESSION['user'];
-    $pass = $_SESSION['password'];
-    $email = $_SESSION['email'];
-    $name = $_SESSION['name'];
 ?>
 
 <!doctype html>
@@ -50,6 +43,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="createTeams.php">Create Teams </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Builds/BattleSim.html">Battle Pokémon</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="profile.php">My Profile <span class="sr-only">(current)</span></a>

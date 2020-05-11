@@ -1,13 +1,5 @@
 <?php 
-  //include('testRabbitMQServerSample.php');
   session_start();
-  $user = "";
-  $pass = "";
-  if(isset($_POST['username']) && $_POST['password'])){
-    $user = $_POST['username'];
-    $pass = $_POST['password'];
-  }
-  //signin($user, $pass);
 ?>
 
 <!doctype html>
@@ -57,7 +49,7 @@
   <![endif]-->
  <!-- Add your site or application content here -->
   <div class="container">
-    <form class="form-signin" method="POST">
+    <form class="form-signin" method="POST" action="signinClient.php">
   	  <img class="mb-4" src="" alt="" width="72" height="72">
   	  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
   	  <label for="username" class="sr-only">Username</label>
