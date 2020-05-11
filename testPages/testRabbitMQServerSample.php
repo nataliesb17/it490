@@ -24,7 +24,6 @@ function connect (){
     print("db = $db // servername = $servername // username = $username // password = $password // dbname = $dbname");
     try{
     	$db = new PDO("mysql:host=$servername;dbname=$dbname;",$username, $password);
-    	print("$db");
     	print "connection to databse successfull";
     	return $db;
     }
@@ -46,7 +45,6 @@ function signin($user, $pass){
 	    $pass = hash('SHA1', $pass);
 	    //database connection
 	    $db = connect();
-	    print("$db");
 	    //validate credentials
 	    $sql = "select * from user_info where username='$user' and password='$pass'";
 	    $statement = $db->prepare($sql);
@@ -56,7 +54,7 @@ function signin($user, $pass){
 	    else{
 	    	$statement->execute();
 	    }
-	    $rows = $db->rowCount();
+	    $rows = $statement->rowCount();
 	    $msg = "";
 	    if($rows > 0){
 	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
@@ -65,11 +63,13 @@ function signin($user, $pass){
 	        }
 	        $success = true;
 	        $msg = "Successfully signed in as $user";
+	       	print("Message: $msg");
 	        redirect("Signing in as $user...", "index.php", 3);
 	    }
 	    else{
 	    	$success = false;
 	        $msg = "Please use valid credentials.";
+	        print("Message: $msg");
 	        redirect("Loading...", "signin.php", 3);
 	    }
 	    return array(
