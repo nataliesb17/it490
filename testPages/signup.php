@@ -1,17 +1,5 @@
 <?php 
-	//include('testRabbitMQServerSample.php');
 	session_start();
-	$name = "";
-	$email = "";
-	$user = "";
-  	$pass = "";
-	if(isset($_POST['name']) && $_POST['email']) && $_POST['username']) && $_POST['password'])){
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$user = $_POST['username'];
-		$pass = $_POST['password'];
-		signup($name, $email, $user, $pass);
-	}
 ?>
 
 <!doctype html>
@@ -62,7 +50,7 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <form class="form-signin" method="POST">
+  <form class="form-signin" method="POST" action="signupClient.php">
 	  <img class="mb-4" src="" alt="" width="72" height="72">
 	  <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
     <label for="name" class="sr-only">Name</label>
@@ -73,7 +61,7 @@
 	  <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
 	  <label for="password" class="sr-only">Password</label>
 	  <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
-	  <p>Already have an account? Sign in <a href="signin.html">here</a>.</p>
+	  <p>Already have an account? Sign in <a href="signin.php">here</a>.</p>
 	  <div class="checkbox mb-3">
 	    <label>
 	      <input type="checkbox" value="remember-me"> Remember me
