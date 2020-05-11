@@ -1,12 +1,5 @@
 <?php 
 	session_start();
-	//include('testRabbitMQServerSample.php');
-  	$userInfo = getUserInfo($_SESSION['user']);
-    //get user info from $_SESSION variables
-    $user = $_SESSION['user'];
-    $pass = $_SESSION['password'];
-    $email = $_SESSION['email'];
-    $name = $_SESSION['name'];
 ?>
 
 <!doctype html>
