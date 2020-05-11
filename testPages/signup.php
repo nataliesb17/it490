@@ -61,7 +61,7 @@
 	  <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
 	  <label for="password" class="sr-only">Password</label>
 	  <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
-	  <p>Already have an account? Sign in <a href="signin.html">here</a>.</p>
+	  <p>Already have an account? Sign in <a href="signin.php">here</a>.</p>
 	  <div class="checkbox mb-3">
 	    <label>
 	      <input type="checkbox" value="remember-me"> Remember me

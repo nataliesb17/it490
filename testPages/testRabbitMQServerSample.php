@@ -20,7 +20,6 @@ function connect (){
     $username = "maniroopa";
     $password = "Pokemon_fantasy321";
     $dbname = "pokemon_fantasy";
-    print("db = $db // servername = $servername // username = $username // password = $password // dbname = $dbname");
     try{
     	$db = new PDO("mysql:host=$servername;dbname=$dbname;",$username, $password);
     	print "connection to databse successfull";
@@ -85,7 +84,7 @@ function signup($name, $email, $user, $pass){
 	    else{
 	    	$statement->execute();
 	    }
-	    $rows = $db->rowCount();
+	    $rows = $statement->rowCount();
 	    if($rows > 0){
 	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
 	        	$success = false;
