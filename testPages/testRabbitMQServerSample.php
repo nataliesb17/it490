@@ -7,7 +7,6 @@ error_reporting(E_ALL);
 require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
-//require_once('functions.php'); //helper functions
 include('account.php'); //db credentials
 
 function connect (){
@@ -31,13 +30,6 @@ function connect (){
     	print 'Connection failed: ' . $e->getMessage();
     }
 }
-
-function redirect($message, $url, $delay){
-    echo "<br> $message <br><br>";
-    header ("refresh:$delay url = $url");
-    exit(); 
-}
-
 function signin($user, $pass){
     try {
     	$success = false;
@@ -57,7 +49,6 @@ function signin($user, $pass){
 	    $msg = "";
 	    if($rows > 0){
 	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
-	            //unset($_SESSION['user']);
 	            $_SESSION['user'] = $user;
 	        }
 	        $success = true;
@@ -125,8 +116,7 @@ function signup($name, $email, $user, $pass){
 function signout(){
     try{
         session_unset();
-        session_destroy();
-        redirect("Signing out...", "signout.php", 3);      
+        session_destroy();     
     }
     catch(Exception $e){
         return $e->getMessage();
@@ -202,9 +192,6 @@ function request_processor($request){
 		case 'signout':
 			return signout();
 			break;
-		case 'isSignedIn':
-			return isSignedIn();
-			break;
 		case 'getUserInfo': 
 			$returnCode = 0;
             $message = "request recieved successfully";
@@ -230,7 +217,6 @@ function request_processor($request){
 }
 
 $server = new rabbitMQServer("testRabbitMQ.ini", "testserver");
-
 echo "Rabbit MQ Server Start" . PHP_EOL;
 $server->process_requests('request_processor');
 echo "Rabbit MQ Server Stop" . PHP_EOL;
