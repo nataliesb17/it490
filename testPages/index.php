@@ -1,6 +1,5 @@
 <?php 
-//include('testRabbitMQServerSample.php');
-session_start();
+  session_start();
 ?>
 
 <!doctype html>
