@@ -1,5 +1,5 @@
 <?php 
-include('testRabbitMQServerSample.php');
+//include('testRabbitMQServerSample.php');
 session_start();
 ?>
 
