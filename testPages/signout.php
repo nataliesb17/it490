@@ -7,7 +7,7 @@
 <html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Fantasy Pokémon - User Profile</title>
+	<title>Fantasy Pokémon</title>
 	<meta name="description" content="IT 490 - 5 Braincells Project">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
