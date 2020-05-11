@@ -9,8 +9,8 @@ require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 
 //have client send message
-//$request = array("type" => "signin","username" => "testuser","password" => "testpass");
-$request = array("type" => "signup", "name" => "Sophia Saint-Val", "email" => "sas238@njit.edu", "username" => "sophiaxsx","password" => "password");
+$request = array("type" => "signin","username" => "testuser","password" => "testpass");
+//$request = array("type" => "signup", "name" => "Sophia Saint-Val", "email" => "sas238@njit.edu", "username" => "sophiaxsx","password" => "password");
 $req = json_decode($request, true);
 $client = new RabbitMQClient('testRabbitMQ.ini', 'testServer');
 $response = $client->send_request($request);
