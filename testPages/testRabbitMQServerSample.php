@@ -42,7 +42,6 @@ function signin($user, $pass){
     try {
     	$success = false;
 	    $msg = "";
-	    $pass = hash('SHA1', $pass);
 	    //database connection
 	    $db = connect();
 	    //validate credentials
@@ -58,19 +57,17 @@ function signin($user, $pass){
 	    $msg = "";
 	    if($rows > 0){
 	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
-	            unset($_SESSION['user']);
+	            //unset($_SESSION['user']);
 	            $_SESSION['user'] = $user;
 	        }
 	        $success = true;
 	        $msg = "Successfully signed in as $user";
 	       	print("Message: $msg");
-	        redirect("Signing in as $user...", "index.php", 3);
 	    }
 	    else{
 	    	$success = false;
 	        $msg = "Please use valid credentials.";
 	        print("Message: $msg");
-	        redirect("Loading...", "signin.php", 3);
 	    }
 	    return array(
 	    	'success' => $success,
@@ -86,7 +83,6 @@ function signup($name, $email, $user, $pass){
 	try{
 		$success = false;
 	    $msg = "";
-		$pass = hash('SHA1', $pass);
 		//database connection
 	    $db = connect();
 	    //insert new user info into db
@@ -103,7 +99,6 @@ function signup($name, $email, $user, $pass){
 	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
 	        	$success = false;
 	        	$msg = "User already exists. Please select another username.";
-	        	redirect("Loading...", "signup.php", 3);
 	        }
 	    }
 	    else{
@@ -117,7 +112,6 @@ function signup($name, $email, $user, $pass){
 		    else{
 		    	$statement->execute();
 		    }
-	    	redirect("Loading sign in page...", "signin.php", 3);
 	    }
 	    return array(
 	    	'success' => $success,
@@ -150,7 +144,7 @@ function isSignedIn($redirect=false){
         	$status = false;
         }
         if($redirect){
-            redirect("Loading...", "signin.php", 3);
+            
         }
         return $status;
     }
