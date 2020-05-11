@@ -50,7 +50,7 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <form class="form-signin" method="POST">
+  <form class="form-signin" method="POST" action="signupClient.php">
 	  <img class="mb-4" src="" alt="" width="72" height="72">
 	  <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
     <label for="name" class="sr-only">Name</label>
