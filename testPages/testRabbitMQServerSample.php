@@ -132,26 +132,6 @@ function signout(){
         return $e->getMessage();
     }
 }
-function isSignedIn($redirect=false){
-    try{
-    	$status = false;
-        if(isset($_SESSION['user'])){
-            $redirect = false;
-            $status = true;
-        }
-        else{
-        	$redirect = true;
-        	$status = false;
-        }
-        if($redirect){
-            
-        }
-        return $status;
-    }
-    catch(Exception $e){
-        return $e->getMessage();
-    }
-}
 function getUserInfo($user){
     try{
     	$success = false;
