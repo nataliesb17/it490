@@ -7,7 +7,7 @@
 <html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Fantasy Pokémon - User Profile</title>
+	<title>Fantasy Pokémon</title>
 	<meta name="description" content="IT 490 - 5 Braincells Project">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -42,7 +42,10 @@
           <li class="nav-item">
             <a class="nav-link" href="createTeams.php">Create Teams </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
+            <a class="nav-link" href="/Builds/BattleSim.html">Battle Pokémon</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="profile.php">My Profile <span class="sr-only">(current)</span></a>
           </li>
         </ul>

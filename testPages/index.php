@@ -44,6 +44,9 @@ session_start();
           <li class="nav-item">
             <a class="nav-link" href="createTeams.php">Create Teams </a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/Builds/BattleSim.html">Battle Pokémon</a>
+          </li>
          <?php if(isset($_SESSION['user'])) : ?>
           <li class="nav-item">
             <a class="nav-link" href="profile.php">My Profile <span class="sr-only"></span></a>
