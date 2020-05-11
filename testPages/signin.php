@@ -1,5 +1,5 @@
 <?php 
-  include('testRabbitMQServerSample.php');
+  //include('testRabbitMQServerSample.php');
   session_start();
   $user = "";
   $pass = "";
@@ -7,7 +7,7 @@
     $user = $_POST['username'];
     $pass = $_POST['password'];
   }
-  signin($user, $pass);
+  //signin($user, $pass);
 ?>
 
 <!doctype html>
