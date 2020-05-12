@@ -1,5 +1,9 @@
 <?php 
-	session_start();
+session_start();
+$name = $_SESSION['name'];
+$user = $_SESSION['username'];
+$email = $_SESSION['email'];
+$password = $_SESSION['password'];
 ?>
 
 <!doctype html>
