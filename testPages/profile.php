@@ -35,7 +35,7 @@ $password = $_SESSION['password'];
   <!-- Add your site or application content here -->
   <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Fantasy Pokémon</a>
+      <a class="navbar-brand" href="index.php">Fantasy Pokémon</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
