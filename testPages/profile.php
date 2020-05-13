@@ -90,9 +90,9 @@ $password = $_SESSION['password'];
                     <h5 class="mb-3">User Profile</h5>
                     <div class="row">
                       <label class="col-lg-3 col-form-label form-control-label">Name</label>
-                        <div class="col-lg-9"><p><?php echo $_SESSION['name']; ?></p></div>
+                        <div class="col-lg-9"><p><?php print $_SESSION['name']; ?></p></div>
                       <label class="col-lg-3 col-form-label form-control-label">Username</label>
-                        <div class="col-lg-9"><p><?php echo $_SESSION['username']; ?></p></div>
+                        <div class="col-lg-9"><p><?php print $_SESSION['username']; ?></p></div>
                         <label class="col-lg-3 col-form-label form-control-label"><?php echo $teams; ?></label>
                     </div>
                 </div>
@@ -103,31 +103,31 @@ $password = $_SESSION['password'];
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Name</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" placeholder="Name" value="<?php echo $_SESSION['name']; ?>">
+                                <input class="form-control" type="text" placeholder="Name" value="<?php print $_SESSION['name']; ?>">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Email address</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="email" placeholder="Email address" value="<?php echo $_SESSION['email']; ?>">
+                                <input class="form-control" type="email" placeholder="Email address" value="<?php print $_SESSION['email']; ?>">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Username</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" placeholder="Username" value="<?php echo $_SESSION['username']; ?>">
+                                <input class="form-control" type="text" placeholder="Username" value="<?php print $_SESSION['username']; ?>">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Password</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="password" placeholder="Password" value="<?php echo $_SESSION['password']; ?>">
+                                <input class="form-control" type="password" placeholder="Password" value="<?php print $_SESSION['password']; ?>">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="password" placeholder="Confirm Password" value="<?php echo $_SESSION['password']; ?>">
+                                <input class="form-control" type="password" placeholder="Confirm Password" value="<?php print $_SESSION['password']; ?>">
                             </div>
                         </div>
                         <div class="form-group row">
