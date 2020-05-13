@@ -131,10 +131,10 @@
                             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
                             <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
                             <div class="card-body">
-                                <p id="name" value="bulbasaur" class="card-text" style="font-weight: bold;">Name</p>
-                                <p id="type" value="grass" class="card-text">Type</p>
-                                <p id="evolution" value="lowest" class="card-text">Evolution</p>
-                                <p id="generation" value="I" class="card-text">Generation</p>
+                                <p id="name" value="bulbasaur" class="card-text" style="font-weight: bold;">Name: Bulbasaur</p>
+                                <p id="type" value="grass" class="card-text">Type: grass</p>
+                                <p id="evolution" value="lowest" class="card-text">Evolution: lowest</p>
+                                <p id="generation" value="I" class="card-text">Generation: I</p>
                             </div>
                         </div>
                     </div>
@@ -143,10 +143,10 @@
                             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
                             <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
                             <div class="card-body">
-                                <p id="name" value="charmander" class="card-text" style="font-weight: bold;">Name</p>
-                                <p id="type" value="fire" class="card-text">Type</p>
-                                <p id="evolution" value="lowest" class="card-text">Evolution</p>
-                                <p id="generation" value="I" class="card-text">Generation</p>
+                                <p id="name" value="charmander" class="card-text" style="font-weight: bold;">Name: Charmander</p>
+                                <p id="type" value="fire" class="card-text">Type: fire</p>
+                                <p id="evolution" value="lowest" class="card-text">Evolution: lowest</p>
+                                <p id="generation" value="I" class="card-text">Generation: I</p>
                             </div>
                         </div>
                     </div>
@@ -155,10 +155,10 @@
                             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
                             <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
                             <div class="card-body">
-                                <p id="name" value="squirtle" class="card-text" style="font-weight: bold;">Name</p>
-                                <p id="type" value="water" class="card-text">Type</p>
-                                <p id="evolution" value="lowest" class="card-text">Evolution</p>
-                                <p id="generation" value="I" class="card-text">Generation</p>
+                                <p id="name" value="squirtle" class="card-text" style="font-weight: bold;">Name: Squirtle</p>
+                                <p id="type" value="water" class="card-text">Type: water</p>
+                                <p id="evolution" value="lowest" class="card-text">Evolution: lowest</p>
+                                <p id="generation" value="I" class="card-text">Generation: I</p>
                             </div>
                         </div>
                     </div>
@@ -171,10 +171,10 @@
                             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
                             <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
                             <div class="card-body">
-                                <p id="name" value="blastoise" class="card-text" style="font-weight: bold;">Name</p>
-                                <p id="type" value="water" class="card-text">Type</p>
-                                <p id="evolution" value="lowest" class="card-text">Evolution</p>
-                                <p id="generation" value="I" class="card-text">Generation</p>
+                                <p id="name" value="blastoise" class="card-text" style="font-weight: bold;">Name: Blastoise</p>
+                                <p id="type" value="water" class="card-text">Type: water</p>
+                                <p id="evolution" value="lowest" class="card-text">Evolution: lowest</p>
+                                <p id="generation" value="I" class="card-text">Generation: I</p>
                             </div>
                         </div>
                     </div>
@@ -183,10 +183,10 @@
                             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
                             <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
                             <div class="card-body">
-                                <p id="name" value="pidgey" class="card-text" style="font-weight: bold;">Name</p>
-                                <p id="type" value="normal" class="card-text">Type</p>
-                                <p id="evolution" value="lowest" class="card-text">Evolution</p>
-                                <p id="generation" value="I" class="card-text">Generation</p>
+                                <p id="name" value="pidgey" class="card-text" style="font-weight: bold;">Name: Pidgey</p>
+                                <p id="type" value="normal" class="card-text">Type: normal</p>
+                                <p id="evolution" value="lowest" class="card-text">Evolution: lowest</p>
+                                <p id="generation" value="I" class="card-text">Generation: I</p>
                             </div>
                         </div>
                     </div>
@@ -195,10 +195,10 @@
                             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
                             <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
                             <div class="card-body">
-                                <p id="name" value="caterpie" class="card-text" style="font-weight: bold;">Name</p>
-                                <p id="type" value="bug" class="card-text">Type</p>
-                                <p id="evolution" value="lowest" class="card-text">Evolution</p>
-                                <p id="generation" value="I" class="card-text">Generation</p>
+                                <p id="name" value="caterpie" class="card-text" style="font-weight: bold;">Name: Caterpie</p>
+                                <p id="type" value="bug" class="card-text">Type: bug</p>
+                                <p id="evolution" value="lowest" class="card-text">Evolution: lowest</p>
+                                <p id="generation" value="I" class="card-text">Generation: I</p>
                             </div>
                         </div>
                     </div>

@@ -81,43 +81,5 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
 		// Value has the name implies is the current value of the input element, if there is one
 		orderBy(event.target.value);
 	});
-
-	// Function to filter out non-vegan results
-	function toggleVegan(showVegan) {
-		// If showVegan is TRUE, only display published results
-		// Filter will only inclue objects that return TRUE from it's query
-		var filteredResults = pokemonDatabase.filter(function (result) {
-			// If showVegan is TRUE, always show.
-			// Otherweise only show if vegan is TRUE
-			return showVegan || result.vegan;
-		});
-		renderPokemon(filteredResults);
-	}
-	
-	// Change events trigger after the value of a form input changes
-	document.querySelector('#vegan').addEventListener('change', function(event){
-		// in this case value is a string that we need to convert to a boolean 
-		var value = event.target.value === 'true';
-		toggleVegan(value);
-	});
-	
-	function toggleRanges(showRanges){
-		var filteredResults = pokemonDatabase.filter(function (result){
-			return showRanges || result.priceRange;
-		});
-		renderPokemon(filteredResults);
-	}
-	
-	document.querySelector('#priceRanges').addEventListener('change', function(event){
-		// in this case value is a string that we need to convert to a boolean 
-		if (event.target.value === 'true'){
-			var value = event.target.value === 'low';
-			toggleRanges(value);
-		}
-		else{
-			var value = event.target.value === 'high';
-			toggleRanges(value);
-		}
-	});
 })(); // Wrap entire file in self executing function. 
       // Keeping all variables declared in this file inside a local scope.
