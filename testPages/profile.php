@@ -86,44 +86,44 @@
                     <h5 class="mb-3">User Profile</h5>
                     <div class="row">
                       <label class="col-lg-3 col-form-label form-control-label">Name</label>
-                        <div class="col-lg-9"><p><?php echo $name; ?></p></div>
+                        <div class="col-lg-9"><p><?php echo $_SESSION['name']; ?></p></div>
                       <label class="col-lg-3 col-form-label form-control-label">Username</label>
-                        <div class="col-lg-9"><p><?php echo $user; ?></p></div>
+                        <div class="col-lg-9"><p><?php echo $_SESSION['username']; ?></p></div>
                         <label class="col-lg-3 col-form-label form-control-label"><?php echo $teams; ?></label>
                     </div>
                 </div>
 
                 <!-- Edit User Profile -->
                 <div class="tab-pane" id="edit">
-                    <form role="form" method="POST">
+                    <form role="form" method="POST" action="editProfile.php">
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Name</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" placeholder="Name" value="<?php echo $name; ?>">
+                                <input class="form-control" type="text" placeholder="Name" value="<?php echo $_SESSION['name']; ?>">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Email address</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="email" placeholder="Email address" value="<?php echo $email; ?>">
+                                <input class="form-control" type="email" placeholder="Email address" value="<?php echo $_SESSION['email']; ?>">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Username</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" placeholder="Username" value="<?php echo $user; ?>">
+                                <input class="form-control" type="text" placeholder="Username" value="<?php echo $_SESSION['username']; ?>">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Password</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="password" placeholder="Password" value="<?php echo $password; ?>">
+                                <input class="form-control" type="password" placeholder="Password" value="<?php echo $_SESSION['password']; ?>">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="password" placeholder="Confirm Password" value="<?php echo $password; ?>">
+                                <input class="form-control" type="password" placeholder="Confirm Password" value="<?php echo $_SESSION['password']; ?>">
                             </div>
                         </div>
                         <div class="form-group row">

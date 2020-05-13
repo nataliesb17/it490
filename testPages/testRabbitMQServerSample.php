@@ -146,7 +146,7 @@ function getUserInfo($user){
             	$_SESSION['user'] = $userInfo['username'];
             	$_SESSION['password'] = $userInfo['password'];
             	$success = true;
-            	$msg = print_r($userInfo);
+            	$msg = $userInfo;
             }
         }
         else{
@@ -159,6 +159,53 @@ function getUserInfo($user){
 	    );
     }
     catch(Exception $e){
+        return $e->getMessage();
+    }
+}
+function editProfile($name, $email, $user, $pass){
+	try{
+		$success = false;
+	    $msg = "";
+		//database connection
+	    $db = connect();
+	    //insert new user info into db
+	    $sql = "select * from user_info where username='$user'";
+	    $statement = $db->prepare($sql);
+	    if(!$statement){
+	    	$db->errorInfo();
+	    }
+	    else{
+	    	$statement->execute();
+	    }
+	    $rows = $statement->rowCount();
+	    if($rows > 0){
+	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
+	        	$sql = "update user_info set username='$user', password='$pass', name='$name', email='$email' where username='$user'";
+		        $statement = $db->prepare($sql);
+			    if(!$statement){
+			    	$db->errorInfo();
+			    }
+			    else{
+			    	$_SESSION['username'] = $user;
+				    $_SESSION['password'] = $pass;
+				    $_SESSION['name'] = $name;
+				    $_SESSION['email'] = $email;
+			    	$statement->execute();
+			    }
+			    $success = true;
+	        	$msg = "Successfully updated $user's profile information.";
+	        }
+	    }
+	    else{
+	    	$success = false;
+	    	$msg = "User information not found.";
+	    }
+	    return array(
+	    	'success' => $success,
+	    	'msg' => $msg
+	    );
+	}
+	catch(Exception $e){
         return $e->getMessage();
     }
 }
@@ -191,6 +238,11 @@ function request_processor($request){
 			break;
 		case 'signout':
 			return signout();
+			break;
+		case 'editProfile':
+			$returnCode = 0;
+            $message = "request recieved successfully";
+            $payload = editProfile($request['name'], $request['email'], $request['username'], $request['password']);
 			break;
 		case 'getUserInfo': 
 			$returnCode = 0;
