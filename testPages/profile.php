@@ -103,31 +103,31 @@ $password = $_SESSION['password'];
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Name</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" placeholder="Name" value="<?php print $_SESSION['name']; ?>">
+                                <input class="form-control" type="text" placeholder="Name">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Email address</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="email" placeholder="Email address" value="<?php print $_SESSION['email']; ?>">
+                                <input class="form-control" type="email" placeholder="Email address">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Username</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" placeholder="Username" value="<?php print $_SESSION['username']; ?>">
+                                <input class="form-control" type="text" placeholder="Username">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Password</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="password" placeholder="Password" value="<?php print $_SESSION['password']; ?>">
+                                <input class="form-control" type="password" placeholder="Password">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="password" placeholder="Confirm Password" value="<?php print $_SESSION['password']; ?>">
+                                <input class="form-control" type="password" placeholder="Confirm Password">
                             </div>
                         </div>
                         <div class="form-group row">
