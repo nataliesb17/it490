@@ -22,11 +22,11 @@ function connect (){
     $dbname = "pokemon_fantasy";
     try{
     	$db = new PDO("mysql:host=$servername;dbname=$dbname;",$username, $password);
-    	print "connection to databse successfull";
+    	print "connection to databse successfull \n\n";
     	return $db;
     }
     catch(PDOException $e){
-    	print 'Connection failed: ' . $e->getMessage();
+    	print 'Connection failed: ' . $e->getMessage() . "\n\n";
     }
 }
 function signin($user, $pass){
@@ -48,25 +48,22 @@ function signin($user, $pass){
 	    $msg = "";
 	    if($rows > 0){
 	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
-            	$_SESSION['name'] = $row[0]['name'];
-            	$_SESSION['email'] = $row[0]['email'];
-            	$_SESSION['user'] = $row[0]['username'];
-            	$_SESSION['password'] = $row[0]['password'];
+            	$userInfo = array('name' => $row[0]['name'], 'email' => $row[0]['email'], 'username' => $row[0]['username'], 'password' => $row[0]['password']);
 	        }
 	        $success = true;
-	        $msg = "Successfully signed in as $user";
-	        print_r($_SESSION);
+	        $msg = "Successfully signed in as $user \n\n";
 	       	print("Message: $msg");
 	       	//header('Location: index.php');
 	    }
 	    else{
 	    	$success = false;
-	        $msg = "Please use valid credentials.";
+	        $msg = "Please use valid credentials. \n\n";
 	        print("Message: $msg");
 	    }
 	    return array(
 	    	'success' => $success,
-	    	'msg' => $msg
+	    	'msg' => $msg,
+	    	'userInfo' => $userInfo;
 	    );
     } 
     catch(Exception $e){
@@ -93,12 +90,12 @@ function signup($name, $email, $user, $pass){
 	    if($rows > 0){
 	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
 	        	$success = false;
-	        	$msg = "User already exists. Please select another username.";
+	        	$msg = "User already exists. Please select another username. \n\n";
 	        }
 	    }
 	    else{
 	    	$success = true;
-	    	$msg = "Successfully signed up as $user. Please sign in.";
+	    	$msg = "Successfully signed up as $user. Please sign in. \n\n";
 	        $sql = "insert into user_info (username, password, name, email) values ('$user', '$pass', '$name', '$email')";
 	    	$statement = $db->prepare($sql);
 		    if(!$statement){
@@ -145,17 +142,13 @@ function getUserInfo($user){
         if($rows > 0){
             while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
             	$userInfo = array('name' => $row[0]['name'], 'email' => $row[0]['email'], 'username' => $row[0]['username'], 'password' => $row[0]['password']);
-            	$_SESSION['name'] = $row[0]['name'];
-            	$_SESSION['email'] = $row[0]['email'];
-            	$_SESSION['user'] = $row[0]['username'];
-            	$_SESSION['password'] = $row[0]['password'];
             	$success = true;
             	$msg = $userInfo;
             }
         }
         else{
         	$success = false;
-            $msg = 'Could not retrieve user information.';
+            $msg = "Could not retrieve user information. \n\n";
         }
         return array(
 	    	'success' => $success,
@@ -191,23 +184,21 @@ function editProfile($name, $email, $user, $pass){
 			    	$db->errorInfo();
 			    }
 			    else{
-			    	$_SESSION['username'] = $user;
-				    $_SESSION['password'] = $pass;
-				    $_SESSION['name'] = $name;
-				    $_SESSION['email'] = $email;
+			    	$userInfo = array('name' => $name, 'email' => $email, 'username' => $user, 'password' => $pass);
 			    	$statement->execute();
 			    }
 			    $success = true;
-	        	$msg = "Successfully updated $user's profile information.";
+	        	$msg = "Successfully updated $user's profile information. \n\n";
 	        }
 	    }
 	    else{
 	    	$success = false;
-	    	$msg = "User information not found.";
+	    	$msg = "User information not found. \n\n";
 	    }
 	    return array(
 	    	'success' => $success,
-	    	'msg' => $msg
+	    	'msg' => $msg,
+	    	'userInfo' => $userInfo
 	    );
 	}
 	catch(Exception $e){
@@ -233,12 +224,12 @@ function request_processor($request){
 	switch($type){
 		case "signin":
 			$returnCode = 0;
-            $message = "request recieved successfully";
+            $message = "request recieved successfully \n\n";
             $payload = signin($request['username'], $request['password']);
             break;
 		case 'signup':
 			$returnCode = 0;
-            $message = "request recieved successfully";
+            $message = "request recieved successfully \n\n";
             $payload = signup($request['name'], $request['email'], $request['username'], $request['password']);
 			break;
 		case 'signout':
@@ -246,12 +237,12 @@ function request_processor($request){
 			break;
 		case 'editProfile':
 			$returnCode = 0;
-            $message = "request recieved successfully";
+            $message = "request recieved successfully \n\n";
             $payload = editProfile($request['name'], $request['email'], $request['username'], $request['password']);
 			break;
 		case 'getUserInfo': 
 			$returnCode = 0;
-            $message = "request recieved successfully";
+            $message = "request recieved successfully \n\n";
             $payload = getUserInfo($request['username']);
 			break;
 	    case "redirect":
@@ -262,7 +253,7 @@ function request_processor($request){
 			return array("return_code"=>'0', "message"=>"Echo: " .$req["message"]);
 	    default:
 	      	$returnCode = 0;
-            $message = "Default message.";
+            $message = "Default message. \n\n";
             $payload = "default payload";
 	      break;
 		}
