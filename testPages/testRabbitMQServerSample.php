@@ -31,8 +31,7 @@ function connect (){
 }
 function signin($user, $pass){
     try {
-    	session_start();
-    	$success = false;
+		$success = false;
 	    $msg = "";
 	    //database connection
 	    $db = connect();
@@ -145,11 +144,11 @@ function getUserInfo($user){
 	    $rows = $db->rowCount();
         if($rows > 0){
             while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
-            	$userInfo = array('name' => $row['name'], 'email' => $row['email'], 'username' => $row['username'], 'password' => $row['password']);
-            	$_SESSION['name'] = $userInfo['name'];
-            	$_SESSION['email'] = $userInfo['email'];
-            	$_SESSION['user'] = $userInfo['username'];
-            	$_SESSION['password'] = $userInfo['password'];
+            	$userInfo = array('name' => $row[0]['name'], 'email' => $row[0]['email'], 'username' => $row[0]['username'], 'password' => $row[0]['password']);
+            	$_SESSION['name'] = $row[0]['name'];
+            	$_SESSION['email'] = $row[0]['email'];
+            	$_SESSION['user'] = $row[0]['username'];
+            	$_SESSION['password'] = $row[0]['password'];
             	$success = true;
             	$msg = $userInfo;
             }
@@ -160,7 +159,8 @@ function getUserInfo($user){
         }
         return array(
 	    	'success' => $success,
-	    	'msg' => $msg
+	    	'msg' => $msg,
+	    	'userInfo' => $userInfo
 	    );
     }
     catch(Exception $e){
