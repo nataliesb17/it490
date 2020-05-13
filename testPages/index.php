@@ -1,7 +1,4 @@
-<?php 
-  session_start();
-?>
-
+<?php session_start();?>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -46,20 +43,20 @@
           <li class="nav-item">
             <a class="nav-link" href="/Builds/BattleSim.html">Battle Pokémon</a>
           </li>
-         <?php if(isset($_SESSION['user'])) : ?>
+         <?php if(isset($_SESSION['username'])) : ?>
           <li class="nav-item">
             <a class="nav-link" href="profile.php">My Profile <span class="sr-only"></span></a>
           </li>
           <?php endif; ?>
         </ul>
-        <?php if(!isset($_SESSION['user'])) : ?>
+        <?php if(!isset($_SESSION['username'])) : ?>
         <ul class="navbar-nav ml-auto">
                 <li class="nav-item my-2 my-lg-0">
                         <a class="nav-link" href="signin.php">Sign in</a>
                 </li>
         </ul>
         <?php endif; ?>
-        <?php if(isset($_SESSION['user'])) : ?>
+        <?php if(isset($_SESSION['username'])) : ?>
         <ul class="navbar-nav ml-auto">
                 <li class="nav-item my-2 my-lg-0">
                         <a class="nav-link" href="signout.php">Sign out</a>

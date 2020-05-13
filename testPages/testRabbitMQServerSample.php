@@ -63,7 +63,7 @@ function signin($user, $pass){
 	    return array(
 	    	'success' => $success,
 	    	'msg' => $msg,
-	    	'userInfo' => $userInfo;
+	    	'userInfo' => $userInfo
 	    );
     } 
     catch(Exception $e){
