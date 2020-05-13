@@ -1,7 +1,4 @@
-<?php 
-  session_start();
-?>
-
+<?php session_start();?>
 <!doctype html>
 <html class="no-js" lang="en">
 <head>

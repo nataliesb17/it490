@@ -1,7 +1,6 @@
 <?php 
-	session_start();
+session_start();
 ?>
-
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -31,7 +30,7 @@
   <!-- Add your site or application content here -->
   <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Fantasy Pokémon</a>
+      <a class="navbar-brand" href="index.php">Fantasy Pokémon</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -86,51 +85,52 @@
                     <h5 class="mb-3">User Profile</h5>
                     <div class="row">
                       <label class="col-lg-3 col-form-label form-control-label">Name</label>
-                        <div class="col-lg-9"><p><?php echo $name; ?></p></div>
+                        <div class="col-lg-9"><p><?php print $_SESSION['name']; ?></p></div>
                       <label class="col-lg-3 col-form-label form-control-label">Username</label>
-                        <div class="col-lg-9"><p><?php echo $user; ?></p></div>
-                        <label class="col-lg-3 col-form-label form-control-label"><?php echo $teams; ?></label>
+                        <div class="col-lg-9"><p><?php print $_SESSION['username']; ?></p></div>
+                      <label class="col-lg-3 col-form-label form-control-label">Teams</label>
+                      	<div class="col-lg-9"><p>Teams currently unavailable.</p></div>
                     </div>
                 </div>
 
                 <!-- Edit User Profile -->
                 <div class="tab-pane" id="edit">
-                    <form role="form" method="POST">
+                    <form role="form" method="POST" action="editProfile.php">
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Name</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" placeholder="Name" value="<?php echo $name; ?>">
+			    <input class="form-control" type="text" name="name" placeholder="Name">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Email address</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="email" placeholder="Email address" value="<?php echo $email; ?>">
+                                <input class="form-control" type="email" name="email" placeholder="Email address">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Username</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" placeholder="Username" value="<?php echo $user; ?>">
+                                <input class="form-control" type="text" name="username" placeholder="Username">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Password</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="password" placeholder="Password" value="<?php echo $password; ?>">
+                                <input class="form-control" type="password" name="password" placeholder="Password">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="password" placeholder="Confirm Password" value="<?php echo $password; ?>">
+                                <input class="form-control" type="password" name="password" placeholder="Confirm Password">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label"></label>
                             <div class="col-lg-9">
                                 <input type="reset" class="btn btn-secondary" value="Cancel">
-                                <input type="button" class="btn btn-primary" value="Save Changes">
+                                <input type="submit" class="btn btn-primary" value="Save Changes">
                             </div>
                         </div>
                     </form>
@@ -177,4 +177,3 @@
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 </html>
-

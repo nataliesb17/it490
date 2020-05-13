@@ -1,0 +1,70 @@
+{
+        "slot1": {
+            "pokemonid": "1",
+            "name": "bulbasaur",
+            "type1": "grass",
+            "type2": "null",
+            "health": 24,
+            "move1": "GROWL",
+            "move2": "RAZOR LEAF",
+            "move3": "TACKLE",
+            "move4": "VINE WHIP"
+        },
+    
+        "slot2":{
+            "pokemon_id": "4",
+            "name": "charmander",
+            "type1": "fire",
+            "type2": "null",
+            "health": 26,
+            "move1": "FLAMETHROWER",
+            "move2": "EMBER",
+            "move3": "SCRATCH",
+            "move4": "TAIL WHIP"
+        },
+        "slot3": {
+            "pokemon_id": "7",
+            "name": "squirtle",
+            "type1": "water",
+            "type2": "null",
+            "health": 23,
+            "move1": "WATER GUN",
+            "move2": "TAIL WHIP",
+            "move3": "BUBBLE",
+            "move4": "GROWL"
+        },
+        "slot4": {
+            "pokemon_id": "10",
+            "name": "caterpie",
+            "type1": "bug",
+            "type2": "null",
+            "health": 15,
+            "move1": "TACKLE",
+            "move2": "STRING SHOT",
+            "move3": "POISON STING",
+            "move4": "NULL"
+        },
+        "slot5": {
+            "pokemon_id": "9",
+            "name": "blastoise",
+            "type1": "water",
+            "type2": "null",
+            "health": 322,
+            "move1": "HYDRO PUMP",
+            "move2": "WATER PULSE",
+            "move3": "SURF",
+            "move4": "CRUNCH"
+        },
+        "slot6": {
+            "pokemon_id": "16",
+            "name": "pidgey",
+            "type1": "normal",
+            "type2": "flyin",
+            "health": 30,
+            "move1": "WING ATTACK",
+            "move2": "PECK",
+            "move3": "SAND ATTACK",
+            "move4": "NULL"
+        }
+   
+}
