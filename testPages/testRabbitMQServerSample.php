@@ -48,16 +48,18 @@ function signin($user, $pass){
 	    $msg = "";
 	    if($rows > 0){
 	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
-	            $userInfo = array('name' => $row['name'], 'email' => $row['email'], 'username' => $row['username'], 'password' => $row['password']);
-            	$_SESSION['name'] = $userInfo['name'];
-            	$_SESSION['email'] = $userInfo['email'];
-            	$_SESSION['user'] = $userInfo['username'];
-            	$_SESSION['password'] = $userInfo['password'];
+	            //$userInfo = array('name' => $row['name'], 'email' => $row['email'], 'username' => $row['username'], 'password' => $row['password']);
+	            print_r($row);
+            	$_SESSION['name'] = $row['name'];
+            	$_SESSION['email'] = $row['email'];
+            	$_SESSION['user'] = $row['username'];
+            	$_SESSION['password'] = $row['password'];
 	        }
 	        $success = true;
 	        $msg = "Successfully signed in as $user";
+	        print_r($_SESSION);
 	       	print("Message: $msg");
-	       	header('Location: index.php');
+	       	//header('Location: index.php');
 	    }
 	    else{
 	    	$success = false;
