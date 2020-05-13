@@ -48,12 +48,10 @@ function signin($user, $pass){
 	    $msg = "";
 	    if($rows > 0){
 	        while($row = $statement->fetchAll(PDO::FETCH_ASSOC)){
-	            //$userInfo = array('name' => $row['name'], 'email' => $row['email'], 'username' => $row['username'], 'password' => $row['password']);
-	            print_r($row);
-            	$_SESSION['name'] = $row['name'];
-            	$_SESSION['email'] = $row['email'];
-            	$_SESSION['user'] = $row['username'];
-            	$_SESSION['password'] = $row['password'];
+            	$_SESSION['name'] = $row[0]['name'];
+            	$_SESSION['email'] = $row[0]['email'];
+            	$_SESSION['user'] = $row[0]['username'];
+            	$_SESSION['password'] = $row[0]['password'];
 	        }
 	        $success = true;
 	        $msg = "Successfully signed in as $user";
