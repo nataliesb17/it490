@@ -1,8 +1,4 @@
-<?php 
-	session_unset();
-  session_destroy();   
-?>
-
+<?php session_start(); session_unset(); session_destroy();?>
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
