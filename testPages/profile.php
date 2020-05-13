@@ -99,31 +99,31 @@
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Name</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" placeholder="Name">
+                                <input class="form-control" type="text" name="name" placeholder="Name">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Email address</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="email" placeholder="Email address">
+                                <input class="form-control" type="email" name="email" placeholder="Email address">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Username</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="text" placeholder="Username">
+                                <input class="form-control" type="text" name="username" placeholder="Username">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Password</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="password" placeholder="Password">
+                                <input class="form-control" type="password" name="password" placeholder="Password">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
                             <div class="col-lg-9">
-                                <input class="form-control" type="password" placeholder="Confirm Password">
+                                <input class="form-control" type="password" name="password" placeholder="Confirm Password">
                             </div>
                         </div>
                         <div class="form-group row">
