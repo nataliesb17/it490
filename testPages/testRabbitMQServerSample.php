@@ -31,6 +31,7 @@ function connect (){
 }
 function signin($user, $pass){
     try {
+    	session_start();
     	$success = false;
 	    $msg = "";
 	    //database connection
