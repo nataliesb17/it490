@@ -14,12 +14,12 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
 	// An array of Objects, similar to database records we will eventually be dealing with.
 	//CONNECT TO API HERE
 	var pokemonDatabase = [
-		{ name: '', type: '', evolution: '', generation: '', img: ''},
-		{ name: '', type: '', evolution: '', generation: '', img: ''},
-		{ name: '', type: '', evolution: '', generation: '', img: ''},
-		{ name: '', type: '', evolution: '', generation: '', img: ''},
-		{ name: '', type: '', evolution: '', generation: '', img: ''},
-		{ name: '', type: '', evolution: '', generation: '', img: ''}
+		{ name: 'bulbasaur', type: 'grass', evolution: 'lowest', generation: 'I', img: ''},
+		{ name: 'charmander', type: 'fire', evolution: 'lowest', generation: 'I', img: ''},
+		{ name: 'squirtle', type: 'water', evolution: 'lowest', generation: 'I', img: ''},
+		{ name: 'caterpie', type: 'bug', evolution: 'lowest', generation: 'I', img: ''},
+		{ name: 'blastoise', type: 'water', evolution: 'lowest', generation: 'I', img: ''},
+		{ name: 'pidgey', type: 'normal', evolution: 'lowest', generation: 'I', img: ''}
 	];
 
 	function renderPokemon (results) {
