@@ -10,7 +10,7 @@ mysql_secure_installation
 
 sudo apt install openssh-server
 sudo systemctl status ssh
-sudo uff allow ssh
+sudo ufw allow ssh
 
 sudo apt install php
 sudo apt install php-mbstring
