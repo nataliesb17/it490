@@ -129,7 +129,7 @@
                     <div class="col">
                         <div id="pokemon" class="card" style="width: 18rem;">
                             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-                            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
+                            <img class="card-img-top" src="img/pokemon_imgs/bulbasaur.png" alt="">
                             <div class="card-body">
                                 <p id="name" value="bulbasaur" class="card-text" style="font-weight: bold;">Name: Bulbasaur</p>
                                 <p id="type" value="grass" class="card-text">Type: grass</p>
@@ -141,7 +141,7 @@
                     <div class="col">
                         <div id="pokemon" class="card" style="width: 18rem;">
                             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-                            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
+                            <img class="card-img-top" src="img/pokemon_imgs/charmander.png" alt="">
                             <div class="card-body">
                                 <p id="name" value="charmander" class="card-text" style="font-weight: bold;">Name: Charmander</p>
                                 <p id="type" value="fire" class="card-text">Type: fire</p>
@@ -153,7 +153,7 @@
                     <div class="col">
                         <div id="pokemon" class="card" style="width: 18rem;">
                             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-                            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
+                            <img class="card-img-top" src="img/pokemon_imgs/squirtle.png" alt="">
                             <div class="card-body">
                                 <p id="name" value="squirtle" class="card-text" style="font-weight: bold;">Name: Squirtle</p>
                                 <p id="type" value="water" class="card-text">Type: water</p>
@@ -169,7 +169,7 @@
                     <div class="col">
                         <div id="pokemon" class="card" style="width: 18rem;">
                             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-                            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
+                            <img class="card-img-top" src="img/pokemon_imgs/blastoise.png" alt="">
                             <div class="card-body">
                                 <p id="name" value="blastoise" class="card-text" style="font-weight: bold;">Name: Blastoise</p>
                                 <p id="type" value="water" class="card-text">Type: water</p>
@@ -181,7 +181,7 @@
                     <div class="col">
                         <div id="pokemon" class="card" style="width: 18rem;">
                             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-                            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
+                            <img class="card-img-top" src="img/pokemon_imgs/pidgey.png" alt="">
                             <div class="card-body">
                                 <p id="name" value="pidgey" class="card-text" style="font-weight: bold;">Name: Pidgey</p>
                                 <p id="type" value="normal" class="card-text">Type: normal</p>
@@ -193,7 +193,7 @@
                     <div class="col">
                         <div id="pokemon" class="card" style="width: 18rem;">
                             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-                            <img class="card-img-top" src="pokemon_imgs/pokemon.jpg" alt="">
+                            <img class="card-img-top" src="img/pokemon_imgs/cateripe.png" alt="">
                             <div class="card-body">
                                 <p id="name" value="caterpie" class="card-text" style="font-weight: bold;">Name: Caterpie</p>
                                 <p id="type" value="bug" class="card-text">Type: bug</p>
