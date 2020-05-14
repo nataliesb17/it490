@@ -8,7 +8,7 @@ git clone https://github.com/nataliesb17/it490.git FantasyPokemon
 sudo apt-get install mysql-server
 mysql_secure_installation
 
-sudo apt install opens-server
+sudo apt install openssh-server
 sudo systemctl status ssh
 sudo uff allow ssh
 
