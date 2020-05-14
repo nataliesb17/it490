@@ -64,14 +64,14 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Name</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="name" name="name">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="name" name="filter_name">
                                 <a class="dropdown-item" value="nameaz">Name [A-Z]</a>
                                 <a class="dropdown-item" value="nameza">Name [Z-A]</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="type" name="type">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="type" name="filter_type">
                                 <a class="dropdown-item" value="normal">Normal</a>
                                 <a class="dropdown-item" value="fire">Fire</a>
                                 <a class="dropdown-item" value="water">Water</a>
@@ -94,7 +94,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Evolution</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="evolution" name="evolution">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="evolution" name="filter_evolution">
                                 <a class="dropdown-item" value="lowest">Lowest</a>
                                 <a class="dropdown-item" value="middle">Middle</a>
                                 <a class="dropdown-item" value="highest">Highest</a>
@@ -102,7 +102,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Generation</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="generation" name="generation">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="generation" name="filter_generation">
                                 <a class="dropdown-item" value="I">I</a>
                                 <a class="dropdown-item" value="II">II</a>
                                 <a class="dropdown-item" value="III">III</a>
@@ -122,8 +122,6 @@
         <div id="content">
             <h1>Create your own fantasy Pokémon teams!</h1>
             <p>Create teams of 6 pokemon to battle against opponents. Who's party will be victorious?</p>
-            <h3> My Team </h3>
-            <div id="team" style="position: center;">
                 <div id="pokemonRow" class="card-deck" style="padding-top: 15px;">
                     <!-- Card Row 1 -->
                     <div class="col">
@@ -135,6 +133,7 @@
                                 <p id="type" value="grass" class="card-text">Type: grass</p>
                                 <p id="evolution" value="lowest" class="card-text">Evolution: lowest</p>
                                 <p id="generation" value="I" class="card-text">Generation: I</p>
+                                <button type="button" class="btn btn-light">Add to Team</button>
                             </div>
                         </div>
                     </div>
@@ -147,6 +146,7 @@
                                 <p id="type" value="fire" class="card-text">Type: fire</p>
                                 <p id="evolution" value="lowest" class="card-text">Evolution: lowest</p>
                                 <p id="generation" value="I" class="card-text">Generation: I</p>
+                                <button type="button" class="btn btn-light">Add to Team</button>
                             </div>
                         </div>
                     </div>
@@ -159,6 +159,7 @@
                                 <p id="type" value="water" class="card-text">Type: water</p>
                                 <p id="evolution" value="lowest" class="card-text">Evolution: lowest</p>
                                 <p id="generation" value="I" class="card-text">Generation: I</p>
+                                <button type="button" class="btn btn-light">Add to Team</button>
                             </div>
                         </div>
                     </div>
@@ -175,6 +176,7 @@
                                 <p id="type" value="water" class="card-text">Type: water</p>
                                 <p id="evolution" value="lowest" class="card-text">Evolution: lowest</p>
                                 <p id="generation" value="I" class="card-text">Generation: I</p>
+                                <button type="button" class="btn btn-light">Add to Team</button>
                             </div>
                         </div>
                     </div>
@@ -187,6 +189,7 @@
                                 <p id="type" value="normal" class="card-text">Type: normal</p>
                                 <p id="evolution" value="lowest" class="card-text">Evolution: lowest</p>
                                 <p id="generation" value="I" class="card-text">Generation: I</p>
+                                <button type="button" class="btn btn-light">Add to Team</button>
                             </div>
                         </div>
                     </div>
@@ -199,11 +202,11 @@
                                 <p id="type" value="bug" class="card-text">Type: bug</p>
                                 <p id="evolution" value="lowest" class="card-text">Evolution: lowest</p>
                                 <p id="generation" value="I" class="card-text">Generation: I</p>
+                                <button type="button" class="btn btn-light">Add to Team</button>
                             </div>
                         </div>
                     </div>
                 </div> <!-- /Card Row 2 -->
-            </div><!-- /My Team -->
         </div> <!-- /Page Content -->
     </div> <!-- /Wrapper -->
     <!-- Footer -->
