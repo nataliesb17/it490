@@ -4,7 +4,6 @@ sudo apt install git
 sudo apt install net-tools
 
 git clone https://github.com/nataliesb17/it490.git FantasyPokemon
-git clone https://github.com/MattToegel/IT490.git IT490Copy
 
 sudo apt-get install mysql-server
 mysql_secure_installation
