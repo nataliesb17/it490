@@ -193,7 +193,7 @@
                     <div class="col">
                         <div id="pokemon" class="card" style="width: 18rem;">
                             <div class="card-header" style="background-color: black; font-weight: bold; color: white;"></div>
-                            <img class="card-img-top" src="img/pokemon_imgs/cateripe.png" alt="">
+                            <img class="card-img-top" src="img/pokemon_imgs/caterpie.png" alt="">
                             <div class="card-body">
                                 <p id="name" value="caterpie" class="card-text" style="font-weight: bold;">Name: Caterpie</p>
                                 <p id="type" value="bug" class="card-text">Type: bug</p>
